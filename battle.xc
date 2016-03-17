@@ -21,7 +21,7 @@
     "allowHpInPanelsAndMinimap": ${"battle/allowHp.xc":"allowHpInPanelsAndMinimap"},
     // true - enable {{marksOnGun}} macro in players panels and minimap. WARNING: performance expensive
     // true - включить макрос {{marksOnGun}} в ушах и на миникарте. ВНИМАНИЕ: может понизить производительность
-    "allowGunMarksInPanelsAndMinimap": ${"battle/allowGun.xc":"allowGunMarksInPanelsAndMinimap"},
+    "allowMarksOnGunInPanelsAndMinimap": ${"battle/allowGun.xc":"allowMarksOnGunInPanelsAndMinimap"},
     // Format of clock on the Debug Panel (near FPS).
     // Формат часов на экране панели отладки (возле FPS).
     "clockFormat": "H:N", // TODO: "H:i"

@@ -22,29 +22,15 @@
       // Дополнительные поля. Каждое поле имеет размер 350x25. Поля располагаются друг над другом.
       // Set of formats for left panel (extended format supported, see above)
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше)
-      "extraFieldsLeft": [
-	  //Фон полоски ХП
-      { "x": 125, "y": 10, "h": 10, "w": "{{hp-max:75}}", "src": "xvm://res/img/hp-bg.png","alpha": "{{alive?30|0}}"},
-      //Полоска ХП
-      { "x": 125, "y": 10, "h": 10, "w": "{{hp:75}}", "src": "xvm://res/img/hp-{{squad?squad|ally}}-{{alive}}.png","alpha": "{{alive?70|0}}"},
-	  //Число ХП	
-	  { "x": 125, "y": 5, "align": "left", "format": "<font size='12' color='{{c:hp-ratio}}'>{{hp|?}}</font>", "alpha": "{{alive?100|0}}", "shadow": {"alpha": "{{alive?100|0}}", "size": 6, "distance": 0, "strength": 1, "color": "0x000000"} }
-	  ],
+      "extraFieldsLeft": [],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
-	  //Фон полоски ХП
-      { "x": 130, "y": 10, "h": 10, "w": "{{hp-max:75}}", "src": "xvm://res/img/hp-bg.png","alpha": "{{alive?30|0}}"},
-      //Полоска ХП
-      { "x": 130, "y": 10, "h": 10, "w": "{{hp:75}}", "src": "xvm://res/img/hp-enemy-{{alive}}.png", "alpha": "{{alive?70|0}}"},
-	  //Число ХП	
-	  { "x": 130, "y": 5, "align": "right", "format": "<font size='12' color='{{c:hp-ratio}}'>{{hp| }}</font>", "alpha": "{{alive?100|0}}", "shadow": {"alpha": "{{alive?100|0}}", "size": 6, "distance": 0, "strength": 1, "color": "0x000000"} },
         // enemy spotted status marker (see above).
         // маркер статуса засвета (см. выше).
         ${"../Spotted/enemySpottedMarker.xc":"enemySpottedMarker"}
       ]
     },
-	
     // Options for the "medium" panels - the first of the medium panels.
     // Режим ушей "medium" - первые средние уши в игре.
     "medium": {
@@ -73,24 +59,12 @@
       // Дополнительные поля. Каждое поле имеет размер 350x25. Поля располагаются друг над другом.
       // Set of formats for left panel (extended format supported, see above)
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше)
-      "extraFieldsLeft": [
-	  //Фон полоски ХП
-      { "x": 250, "y": 6, "h": 16, "w": "{{hp-max:75}}", "src": "xvm://res/img/hp-bg.png","alpha": "{{alive?30|0}}"},
-      //Полоска ХП
-      { "x": 250, "y": 6, "h": 16, "w": "{{hp:75}}", "src": "xvm://res/img/hp-{{squad?squad|ally}}-{{alive}}.png","alpha": "{{alive?70|0}}"},
-	  //Число ХП	
-	  { "x": 250, "y": 5, "align": "left", "format": "<font size='12' color='{{c:hp-ratio}}'>{{hp| }}</font>", "alpha": "{{alive?100|0}}", "shadow": {"alpha": "{{alive?100|0}}", "size": 6, "distance": 0, "strength": 1, "color": "0x000000"} }
-	  ],
+      "extraFieldsLeft": [],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
-	  //Фон полоски ХП
-      { "x": 255, "y": 6, "h": 16, "w": "{{hp-max:75}}", "src": "xvm://res/img/hp-bg.png","alpha": "{{alive?30|0}}"},
-      //Полоска ХП
-      { "x": 255, "y": 6, "h": 16, "w": "{{hp:75}}", "src": "xvm://res/img/hp-enemy-{{alive}}.png", "alpha": "{{alive?70|0}}"},
-	  //Число ХП	
-	  { "x": 255, "y": 5, "align": "right", "format": "<font size='12' color='{{c:hp-ratio}}'>{{hp| }}</font>", "alpha": "{{alive?100|0}}", "shadow": {"alpha": "{{alive?100|0}}", "size": 6, "distance": 0, "strength": 1, "color": "0x000000"} },
-	  //Индикатор засвета
+        // enemy spotted status marker (see above).
+        // маркер статуса засвета (см. выше).
         ${"../Spotted/enemySpottedMarker.xc":"enemySpottedMarker"}
       ]
     },
@@ -123,36 +97,24 @@
       // Дополнительные поля. Каждое поле имеет размер 350x25. Поля располагаются друг над другом.
       // Set of formats for left panel (extended format supported, see above)
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше)
-      "extraFieldsLeft": [
-	  //Фон полоски ХП
-      { "x": 195, "y": 10, "h": 10, "w": "{{hp-max:75}}", "src": "xvm://res/img/hp-bg.png","alpha": "{{alive?30|0}}"},
-      //Полоска ХП
-      { "x": 195, "y": 10, "h": 10, "w": "{{hp:75}}", "src": "xvm://res/img/hp-{{squad?squad|ally}}-{{alive}}.png","alpha": "{{alive?70|0}}"},
-	  //Число ХП	
-	  { "x": 195, "y": 5, "align": "left", "format": "<font size='12' color='{{c:hp-ratio}}'>{{hp|?}}</font>", "alpha": "{{alive?100|0}}", "shadow": {"alpha": "{{alive?100|0}}", "size": 6, "distance": 0, "strength": 1, "color": "0x000000"} }
-	  ],
+      "extraFieldsLeft": [],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
-	  //Фон полоски ХП
-      { "x": 195, "y": 10, "h": 10, "w": "{{hp-max:75}}", "src": "xvm://res/img/hp-bg.png","alpha": "{{alive?30|0}}"},
-      //Полоска ХП
-      { "x": 195, "y": 10, "h": 10, "w": "{{hp:75}}", "src": "xvm://res/img/hp-enemy-{{alive}}.png", "alpha": "{{alive?70|0}}"},
-	  //Число ХП	
-	  { "x": 195, "y": 5, "align": "right", "format": "<font size='12' color='{{c:hp-ratio}}'>{{hp| }}</font>", "alpha": "{{alive?100|0}}", "shadow": {"alpha": "{{alive?100|0}}", "size": 6, "distance": 0, "strength": 1, "color": "0x000000"} },
-	  //Индикатор засвета
+        // enemy spotted status marker (see above).
+        // маркер статуса засвета (см. выше).
         ${"../Spotted/enemySpottedMarker.xc":"enemySpottedMarker"}
       ]
     },
 	
-	// Options for the "large" panels - the widest panels.
+    // Options for the "large" panels - the widest panels.
     // Режим ушей "large" - широкие уши в игре.
     "large": {
       // false - disable (отключить)
       "enabled": true,
       // Minimum width of the player's name column, 0-250. Default is 170.
       // Минимальная ширина поля имени игрока, 0-250. По умолчанию: 170.
-      "width": 170,
+      "width": 100,
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
@@ -165,8 +127,8 @@
       "nickFormatRight": "<font alpha='#A0'>{{clan}}</font> {{name%.15s~..}} <font face='mono' size='{{xvm-stat?13|0}}' color='{{c:r}}' alpha='{{alive?#FF|#80}}'>{{r}}</font>",
       // Display format for vehicle name (macros allowed, see macros.txt).
       // Формат отображения названия танка (допускаются макроподстановки, см. macros.txt).
-      "vehicleFormatLeft": "",
-      "vehicleFormatRight": "",
+      "vehicleFormatLeft": "{{vehicle}}",
+      "vehicleFormatRight": "{{vehicle}}",
       // Display format for frags (macros allowed, see macros.txt).
       // Формат отображения фрагов (допускаются макроподстановки, см. macros.txt).
       "fragsFormatLeft": "{{frags}}",
@@ -175,24 +137,12 @@
       // Дополнительные поля. Каждое поле имеет размер 350x25. Поля располагаются друг над другом.
       // Set of formats for left panel (extended format supported, see above)
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше)
-      "extraFieldsLeft": [
-	  //Фон полоски ХП
-      { "x": 350, "y": 10, "h": 10, "w": "{{hp-max:75}}", "src": "xvm://res/img/hp-bg.png","alpha": "{{alive?30|0}}"},
-      //Полоска ХП
-      { "x": 350, "y": 10, "h": 10, "w": "{{hp:75}}", "src": "xvm://res/img/hp-{{squad?squad|ally}}-{{alive}}.png","alpha": "{{alive?70|0}}"},
-	  //Число ХП	
-	  { "x": 350, "y": 5, "align": "left", "format": "<font size='12' color='{{c:hp-ratio}}'>{{hp|?}}</font>", "alpha": "{{alive?100|0}}", "shadow": {"alpha": "{{alive?100|0}}", "size": 6, "distance": 0, "strength": 1, "color": "0x000000"} }
-	  ],
+      "extraFieldsLeft": [],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
-	  //Фон полоски ХП
-      { "x": 345, "y": 10, "h": 10, "w": "{{hp-max:75}}", "src": "xvm://res/img/hp-bg.png","alpha": "{{alive?30|0}}"},
-      //Полоска ХП
-      { "x": 345, "y": 10, "h": 10, "w": "{{hp:75}}", "src": "xvm://res/img/hp-enemy-{{alive}}.png", "alpha": "{{alive?70|0}}"},
-	  //Число ХП	
-	  { "x": 345, "y": 5, "align": "right", "format": "<font size='12' color='{{c:hp-ratio}}'>{{hp| }}</font>", "alpha": "{{alive?100|0}}", "shadow": {"alpha": "{{alive?100|0}}", "size": 6, "distance": 0, "strength": 1, "color": "0x000000"} },
-	  //Индикатор засвета
+        // enemy spotted status marker (see above).
+        // маркер статуса засвета (см. выше).
         ${"../Spotted/enemySpottedMarker.xc":"enemySpottedMarker"}
       ]
     }
