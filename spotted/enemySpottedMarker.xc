@@ -7,13 +7,13 @@
     "alpha": "{{a:spotted}}",
     // x position.
     // положение по горизонтали.
-    "x": -43,
+    "x": -8,
     // y position.
     // положение по вертикали.
-    "y": 12,
+    "y": 6,
     // Horizontal alignment
     // Выравнивание по горизонтали
-    "align": "center",
+    // "align": "center",
     // true - x position is binded to vehicle icon, false - binded to edge of the screen.
     // true - положение по горизонтали отсчитывается от иконки танка, false - от края экрана.
     "bindToIcon": true,

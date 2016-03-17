@@ -32,9 +32,7 @@
       // Основные круги:
       { "enabled":  true, "distance": "blindarea", "scale": 1, "thickness": 0.75, "alpha": 80, "color": "0x3EB5F1" },
       { "enabled":  true, "distance": 445,         "scale": 1, "thickness":  1.1, "alpha": 45, "color": "0xFFCC66" },
-      // Circle of the maximum units appearance.
-      // Окружность границы максимальной отрисовки юнитов.
-	  { "enabled": ${"minimapAppearance.xc":"minimapAppearance"}, "distance": 564, "scale": 1, "thickness":  0.9, "alpha": 40, "color": "0xFFFFFF" },
+      { "enabled":  true,	"distance": 564, "scale": 1, "thickness":  0.9, "alpha": 40, "color": "0xFFCC66" },
       // Additional circles:
       // Дополнительные круги:
       { "enabled": false, "distance": 50,          "scale": 1, "thickness": 0.75, "alpha": 60, "color": "0xFFFFFF" },
@@ -51,10 +49,10 @@
     // Дальнобойность арты может меняться в зависимости от углов постановки машины на склонах местности
     // и высоте расположения машины относительно цели. На миникарте эти факторы не учитываются.
     // Подробнее по ссылке: http://goo.gl/ZqlPa
-        "artillery": { "enabled": true, "alpha": 55, "color": "0x3eb5f1", "thickness": 0.5 },
+    "artillery": { "enabled": true, "alpha": 55, "color": "0xFF6666", "thickness": 0.5 },
     // Maximum range of shooting for machine gun
     // Максимальная дальность полета снаряда для пулеметных танков
-        "shell":     { "enabled": true, "alpha": 55, "color": "0x3eb5f1", "thickness": 0.5 },
+    "shell":     { "enabled": true, "alpha": 55, "color": "0xFF6666", "thickness": 0.5 },
     // Special circles dependent on vehicle type.
     // Many configuration lines for the same vehicle make many circles.
     // See other vehicle types at (replace : symbol with -):
