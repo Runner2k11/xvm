@@ -18,7 +18,7 @@
     // 7 - Average XP  / Средний опыт
     // 8 - Class mark  / Классность
     // 9 - xTE         / xTE
-    "sortColumn": -5,
+    "sortColumn": -3,
     // true - Show xTE column in the vehicle list
     // true - Показывать колонку xTE в списке техники
     "showXTEColumn": true,
