@@ -58,7 +58,7 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "10.03.2016",
+    "date": "25.03.2016",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
@@ -66,7 +66,7 @@
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "6.2.1"
+    "modMinVersion": "6.2.1.1"
   },
 
   // Parameters for login screen.
@@ -88,6 +88,10 @@
   // Frag counter panel.
   // Панель счёта в бою.
   "fragCorrelation": ${"battle.xc":"fragCorrelation"},
+
+  // Total HP of teams.
+  // Общее ХП команд.
+  "totalHP": ${"battle.xc":"totalHP"},
 
   // Ingame crits panel by "expert" skill.
   // Внутриигровая панель критов от навыка "эксперт".
