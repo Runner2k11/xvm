@@ -52,8 +52,8 @@
     // Ping servers
     // Пинг серверов
 	"pingServers": ${"hangar/pingServers.xc":"pingServers"},
-    // Online servers
-    // Онлайн серверов	
+      // true - Enable display of ping to the servers
+      // true - показывать пинг до серверов
 	"onlineServers": ${"hangar/onlineServers.xc":"onlineServers"},
     // Show/hide server info or change its parameters
     // Показать/спрятать информацию о сервере, или изменить ее параметры

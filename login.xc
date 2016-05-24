@@ -19,8 +19,8 @@
     // Ping servers
     // Пинг серверов
 	"pingServers": ${"login/pingServers.xc":"pingServers"},
-    // Online servers
-    // Онлайн серверов
+      // true - Enable display of ping to the servers
+      // true - показывать пинг до серверов
 	"onlineServers": ${"login/onlineServers.xc":"onlineServers"}
   }
 }

@@ -1,6 +1,6 @@
 ﻿/**
- * Minimap labels.
- * Надписи на миникарте.
+ * Minimap labels (alternative mode).
+ * Надписи на миникарте (альтернативный режим).
  */
 {
   // Textfields for units on minimap.
@@ -24,14 +24,10 @@
     // Набор форматов
     "formats": [
 	  ${ "minimapLabelsTemplates.xc":"def.HPSpotted" },
-      ${ "minimapLabelsTemplates.xc":"def.vehicleSpotted" },
-      ${ "minimapLabelsTemplates.xc":"def.nickSpotted" },
-      {
-        "$ref": { "file": "minimapLabelsTemplates.xc", "path": "def.nickSpotted" },
-        "flags": [ "ally", "teamKiller", "spotted", "alive" ],
-        "format": "<font size='{{battletype?8|0}}' color='{{tk?{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}|#BFBFBF}}'><i>{{name%.7s~..}}</i></font>"
-      },
+      ${ "minimapLabelsTemplates.xc":"def.vehicleSpottedCompany" },
+      ${ "minimapLabelsTemplates.xc":"def.nickSpottedCompany" },
 	  ${ "minimapLabelsTemplates.xc":"def.HPLost" },
+      ${ "minimapLabelsTemplates.xc":"def.xmqpEvent" },
       ${ "minimapLabelsTemplates.xc":"def.vtypeLost" },
       ${ "minimapLabelsTemplates.xc":"def.vehicleLost" },
       ${ "minimapLabelsTemplates.xc":"def.nickLost" },
