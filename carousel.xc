@@ -16,8 +16,8 @@
     // Spacing between carousel cells.
     // Отступ между ячейками карусели.
     "padding": {
-        "horizontal": 10,   // по горизонтали
-        "vertical": 2       // по вертикали
+      "horizontal": 10,   // по горизонтали
+      "vertical": 2       // по вертикали
     },
     // Background transparency (default - 60)
     // Прозрачность подложки (по умолчанию - 60)
@@ -45,18 +45,17 @@
     "filters": {
       // false - hide filter.
       // false - скрыть фильтр.
-      "nation":   { "enabled": true },  // nation             / страна
-      "type":     { "enabled": true },  // vehicle class      / тип техники
+      "params":   { "enabled": true },  // main params        / основные параметры
+      "bonus":    { "enabled": true },  // x2 bonus           / x2 бонус
       "favorite": { "enabled": true },  // favorite tanks     / основные танки
       "gameMode": { "enabled": true },  // fallout mode tanks / танки для "боя до последнего"
-      "level":    { "enabled": true },  // vehicle level      / уровень техники
       "prefs":    { "enabled": true }   // other filters      / другие фильтры
     },
     // Spacing between filters cells.
     // Отступ между ячейками фильтров.
     "filtersPadding": {
-        "horizontal": 11,   // по горизонтали
-        "vertical": 13      // по вертикали
+      "horizontal": 11,   // по горизонтали
+      "vertical": 13      // по вертикали
     },
     // Standard cell elements.
     // Стандартные элементы ячеек.
@@ -94,7 +93,7 @@
       // Activate / deactivate button.
       // Кнопка активации / деактивации.
       "activateButton": { "dx": 0, "dy": 0, "alpha": 100, "scale": 1 }
-	},
+    },
     // Extra cell fields (see playersPanel.xc).
     // Дополнительные поля ячеек (см. playersPanel.xc).
     "extraFields": [

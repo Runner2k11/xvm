@@ -9,10 +9,10 @@
     "enabled": true,
     // Horizontal position.
     // Положение по горизонтали.
-    "x": 0,
+    "x": -10,
     // Vertical position.
     // Положение по вертикали.
-    "y": 120,
+    "y": 28,
     // Width.
     // Ширина.
     "width": 300,
@@ -24,13 +24,13 @@
     "topmost": true,
     // Horizontal alignment of field at screen ("left", "center", "right").
     // Горизонтальное выравнивание поля на экране ("left", "center", "right").
-    "align": "center",
+    "align": "right",
     // Vertical alignment of field at screen ("top", "center", "bottom").
     // Вертикальное выравнивание поля на экране ("top", "center", "bottom").
     "valign": "top",
     // Horizontal alignment of text in field ("left", "center", "right").
     // Горизонтальное выравнивание текста внутри поля ("left", "center", "right").
-    "textAlign": "center",
+    "textAlign": "right",
     // vertical alignment of text in field ("top", "center", "bottom").
     // Вертикальное выравнивание текста внутри поля ("top", "center", "bottom").
     "textVAlign": "center",
@@ -72,7 +72,7 @@
     //
     // Clock format.
     // Формат часов.
-    "format": "<textformat tabstops='[80]' leading='-39'><font color='#339900' face='$FieldFont'><font size='15'>{{D%02d}} {{MM}} {{Y}}</font><tab><font color='#339900' size='36'>{{h%02d}}:{{m%02d}}</font>\n<textformat rightMargin='87'>{{WW}}</font></textformat></font></textformat>",
+    "format": "<textformat tabstops='[80]' leading='-39'><font face='$FieldFont'><font size='15'>{{D%02d}} {{MM}} {{Y}}</font><tab><font size='36'>{{h%02d}}:{{m%02d}}</font>\n<textformat rightMargin='87'>{{WW}}</font></textformat></font></textformat>",
     // Shadow.
     // Тень.
     "shadow": {

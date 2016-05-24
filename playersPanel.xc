@@ -6,6 +6,14 @@
   // Enemy spotted status marker format for substitutions in extra fields.
   // Подстановка для дополнительного поля с маркером статуса засвета
   "enemySpottedMarker": ${"Spotted/enemySpottedMarker.xc":"enemySpottedMarker"},
+  // XMQP service marker definition.
+  // Шаблон маркера сервиса XMQP.
+
+  "xmqpServiceMarker": {
+    "x": 6, "y": 1, "align": "center", "bindToIcon": true, 
+    "format": "",
+    "shadow": {}
+  },
   // Parameters of the Players Panels ("ears").
   // Параметры панелей игроков ("ушей").
   "playersPanel": {
