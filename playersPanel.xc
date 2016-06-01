@@ -8,12 +8,7 @@
   "enemySpottedMarker": ${"Spotted/enemySpottedMarker.xc":"enemySpottedMarker"},
   // XMQP service marker definition.
   // Шаблон маркера сервиса XMQP.
-
-  "xmqpServiceMarker": {
-    "x": 6, "y": 1, "align": "center", "bindToIcon": true, 
-    "format": "",
-    "shadow": {}
-  },
+  "xmqpServiceMarker": ${"xmqp/xmqpServiceMarker.xc":"xmqpServiceMarker"},
   // Parameters of the Players Panels ("ears").
   // Параметры панелей игроков ("ушей").
   "playersPanel": {

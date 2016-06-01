@@ -19,7 +19,6 @@
   //    "antiAliasType": "normal" // normal/advanced
   //  }
   "labels": {
-    "enabled": true,
     // Format set
     // Набор форматов
     "formats": [
@@ -27,7 +26,7 @@
       ${ "minimapLabelsTemplates.xc":"def.vehicleSpottedCompany" },
       ${ "minimapLabelsTemplates.xc":"def.nickSpottedCompany" },
 	  ${ "minimapLabelsTemplates.xc":"def.HPLost" },
-      ${ "minimapLabelsTemplates.xc":"def.xmqpEvent" },
+	  ${ "minimapLabelsTemplates.xc":"def.xmqpEvent" },
       ${ "minimapLabelsTemplates.xc":"def.vtypeLost" },
       ${ "minimapLabelsTemplates.xc":"def.vehicleLost" },
       ${ "minimapLabelsTemplates.xc":"def.nickLost" },
