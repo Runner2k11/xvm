@@ -24,7 +24,7 @@
     "allowMarksOnGunInPanelsAndMinimap": ${"battle/allowGun.xc":"allowMarksOnGunInPanelsAndMinimap"},
     // true - enable custom labels on battle interface window
     // true - показывать пользовательские текстовые поля в окне боевого интерфейса
-    "allowLabelsOnBattleInterface": false,
+    "allowLabelsOnBattleInterface": ${"xmqp/allowLabelsOnBattleInterface.xc":"allowLabelsOnBattleInterface"},
     // Format of clock on the Debug Panel (near FPS).
     // Формат часов на экране панели отладки (возле FPS).
     "clockFormat": "H:N", // TODO: "H:i"
@@ -50,34 +50,6 @@
     // true - show quantity of alive instead of dead
     // true - показывать количество живых танков вместо убитых
     "showAliveNotFrags": false
-  },
-  // Total HP of teams.
-  // Общее ХП команд.
-  "totalHP": {
-    // true - show total HP of teams
-    // true - показывать общее ХП команд
-    "enabled": false,
-    // Color of HP per ratio ally/enemy team, hex rgb
-    // Цвет ХП в зависимости от отношения хп союзной и вражеской команд, hex rgb
-    "colors": {
-        "bad":     "FF0000",
-        "neutral": "FFFFFF",
-        "good":    "00FF00"
-    },
-    // Font of HP (used fonts from: res/packages/misk.pkg/system/fonts/)
-    // Шрифт ХП (используются шрифты из: res/packages/misk.pkg/system/fonts/)
-    // default_medium.font, default_smaller.font, default_small.font, hpmp_panel.font, system_large.font, system_medium.font, system_small.font, system_tiny.font, verdana_medium.font, verdana_small.font
-    "font": "default_small.font",
-    // Axis field coordinates
-    // Положение поля по осям
-    "x": 0,
-    "y": 36,
-    // Horizontal alignment of field at screen ("left", "center", "right").
-    // Горизонтальное выравнивание поля на экране ("left", "center", "right").
-    "hAlign": "center",
-    // Vertical alignment of field at screen ("top", "center", "bottom").
-    // Вертикальное выравнивание поля на экране ("top", "center", "bottom").
-    "vAlign": "top"
   },
   // Ingame crits panel by "expert" skill.
   // Внутриигровая панель критов от навыка "эксперт".

@@ -84,11 +84,11 @@
       "format": "<font size='{{battletype?8|{{squad?8|0}}}}' color='{{squad?{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}|{{tk?{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}|#BFBFBF}}}}'><i>{{name%.7s~..}}</i></font>"
     },
     // XMQP event marker.
-    // Маркером события XMQP.
-    "xmqpEvent": {
+    // Маркер события XMQP.
+	"xmqpEvent": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "ally", "squadman", "teamKiller", "spotted", "alive" ],
-      "format": "<font face='xvm' size='8' color='#FFBB00'>{{x-spotted?&#x70;&nbsp;}}{{x-overturned?&#x112;}}</font>",
+      "format": ${"xmqp/xmqpEventMarker.xc":"xmqpEvent"},
       "x": 3,
       "y": -7
     },
@@ -143,7 +143,7 @@
       "x": 4,
       "y": -1
     },
-    // Vehicle type, dead
+    // Player nickname, dead
     // Ник игрока, мертвый
     "nickDead": {
       "$ref": { "path":"def.defaultItem" },

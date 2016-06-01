@@ -1,2 +1,0 @@
-# xvm
-My XVM config
