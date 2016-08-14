@@ -20,10 +20,7 @@
     "playersPanelAltMode": { "enabled": ${"altMode/playersPanelAltMode.xc":"enabled"}, "keyCode": 56, "onHold": true },
     // Alternative vehicle markers mode.
     // Альтернативный режим маркеров над танками.
-    "markersAltMode":      { "enabled": ${"altMode/markersAltMode.xc":"enabled"}, "onHold": true },
-    // false - disable use hotkeys in custom labels on battle interface window
-    // false - отключить использование горячих клавиш в пользовательских текстовых полях в окне боевого интерфейса
-    "battleLabelsHotKeys": true
+    "markersAltMode":      { "enabled": ${"altMode/markersAltMode.xc":"enabled"}, "onHold": true }
   }
 }
 
@@ -279,6 +276,4 @@ AXIS_LX = 0
 AXIS_LY = 1
 AXIS_RX = 2
 AXIS_RY = 3
-
-
 */

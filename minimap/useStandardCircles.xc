@@ -1,5 +1,5 @@
 ﻿{
     // Use standard circles
     // Использовать стандартные круги
-    "useStandardCircles": false
+    "useStandardCircles": true
 }

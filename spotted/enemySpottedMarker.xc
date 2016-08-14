@@ -1,13 +1,13 @@
 ﻿{
-  // Enemy spotted status marker format for substitutions in extra fields.
-  // Подстановка для дополнительного поля с маркером статуса засвета
+  // Enemy spotted status marker definition.
+  // Шаблон маркера статуса засвета противника.
   "enemySpottedMarker": {
     // Opacity percentage of spotted markers in the panels. 0 - transparent (disabled) ... 100 - opaque.
     // Прозрачность в процентах маркеров засвета в ушах. 0 - полностью прозрачные (отключены), 100 - не прозрачные.
     "alpha": "{{a:spotted}}",
     // x position.
     // положение по горизонтали.
-    "x": -43,
+    "x": 53,
     // y position.
     // положение по вертикали.
     "y": 12,

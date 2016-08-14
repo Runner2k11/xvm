@@ -11,7 +11,7 @@
       // Axis field coordinates
       // Положение поля по осям
       "x": 5,
-      "y": 51,
+      "y": 53,
       // Horizontal alignment of field at screen ("left", "center", "right").
       // Горизонтальное выравнивание поля на экране ("left", "center", "right").
       "hAlign": "left",
@@ -26,7 +26,7 @@
       "delimiter": ": ",
       // Maximum number of column rows
       // Максимальное количество строк одной колонки
-      "maxRows": 1,
+      "maxRows": 2,
       // Gap between columns
       // Пространство между колонками
       "columnGap": 4,
