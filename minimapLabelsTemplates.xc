@@ -58,7 +58,7 @@
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
       "format": "<font size='8' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{vehicle}}</font>",
-      "x": 4,
+      "x": 2,
       "y": "{{squad?7|-1}}"
     },
     // Vehicle name, visible, company config
@@ -73,7 +73,7 @@
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "squadman", "spotted", "alive" ],
       "format": "<font size='8' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'><i>{{name%.7s~..}}</i></font>",
-      "x": 4,
+      "x": 2,
       "y": -1
     },
     // Player nickname, visible, company config
@@ -85,13 +85,13 @@
     },
     // XMQP event marker.
     // Маркер события XMQP.
-	"xmqpEvent": {
+    "xmqpEvent": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "ally", "squadman", "teamKiller", "spotted", "alive" ],
       "format": ${"xmqp/xmqpEventMarker.xc":"xmqpEvent"},
       "x": 3,
       "y": -7
-    },
+    },	
     // Vehicle type, missing
     // Тип техники, пропавший
     "vtypeLost": {
@@ -109,7 +109,7 @@
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "lost", "alive" ],
       "format": "<font size='8' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'><i>{{vehicle}}</i></font>",
       "alpha": 85,
-      "x": 4,
+      "x": 2,
       "y": -1
     },
     // Player nickname, missing
@@ -119,7 +119,7 @@
       "flags": [ "squadman", "lost", "alive" ],
       "format": "<font size='8' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'><i>{{name%.7s~..}}</i></font>",
       "alpha": 85,
-      "x": 4,
+      "x": 2,
       "y": -9
     },
     // Vehicle type, dead
@@ -140,7 +140,7 @@
       "flags": [ "squadman", "dead" ],
       "format": "<font size='8' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{vehicle}}</font>",
       "alpha": 85,
-      "x": 4,
+      "x": 2,
       "y": -1
     },
     // Player nickname, dead
@@ -150,29 +150,8 @@
       "flags": [ "squadman", "dead" ],
       "format": "<font size='8' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'><i>{{name%.7s~..}}</i></font>",
       "shadow": { "$ref": { "path":"def.defaultItem.shadow" }, "strength": 3 },
-      "x": 4,
+      "x": 2,
       "y": -9
-    },
-	// ХП игрока, видимый
-    "HPSpotted": {
-      "$ref": { "path":"def.defaultItem" },
-      "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
-      "format": "<font face='dynamic' size='18' color='{{.minimap.labelsData.colors.dot.{{sys-color-key}}}}'>{{hp-ratio%.335a|&#x1B3;}}</font>",
-      "align": "center",
-      "valign": "center",
-	  "x": 0.2,
-      "y": 0.8
-    },
-	// ХП игрока, пропавший
-    "HPLost": {
-      "$ref": { "path":"def.defaultItem" },
-      "flags": [ "ally", "enemy", "squadman", "teamKiller", "lost", "alive" ],
-      "format": "<font face='dynamic' size='18' color='{{.minimap.labelsData.colors.lostDot.{{sys-color-key}}}}'>{{hp-ratio%.335a|&#x1B3;}}</font>",
-      "align": "center",
-      "valign": "center",
-      "alpha": 75,
-	  "x": 0.2,
-      "y": 0.8
     }
   }
 }

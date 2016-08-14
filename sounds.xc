@@ -51,21 +51,23 @@
       // Sound events added by XVM
       // Звуковые события, добавленные в XVM
       //
-      // Perk SixthSense
+      // Sixth sense perk
       // Перк Шестое чувство
       "xvm_sixthSense": "",
-      // Perk SixthSense (On vehicle Т-34-85 Rudy)
-      // Перк Шестое чувство (На технике Т-34-85 Rudy)
+      // Sixth sense perk for Т-34-85 Rudy
+      // Перк Шестое чувство для Т-34-85 Rudy
       "xvm_sixthSenseRudy": "",
       // Enemy detection (Use in together with disable original enemy detection event) 
       // Обнаружение противника (Используйте вместе с отключением оригинального звука обнаружения противника)
       "xvm_enemySighted": "", 
-      //"xvm_enemySighted": "enemySighted",
-      // Fire alert
-      // Пожар
+      //"xvm_enemySighted": "",
+      //"xvm_enemySighted": "",      
+      // Fire alert (Use in together with disable original event)
+      // Пожар (Используйте вместе с отключением оригинального звука)
       "xvm_fireAlert": "",
-      // Damage ammoBay
-      // Повреждение боеукладки
+      // Damage ammoBay (Use in together with disable original event)
+      // Повреждение боеукладки (Используйте вместе с отключением оригинального звука)
+      //"xvm_ammoBay": "",
       "xvm_ammoBay": "",
       // Notifications informing about the imminent end of the battle (Use in together with disable original event)
       // Оповещения сообщающие о скором завершении боя (Используйте вместе с отключением оригинального звука)

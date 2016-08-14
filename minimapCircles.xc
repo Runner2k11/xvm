@@ -4,7 +4,7 @@
  */
 {
   "circles": {
-    "enabled": true,
+    "enabled": false,
     // TODO: better description and translation
     // View distance
     // Дальность обзора
