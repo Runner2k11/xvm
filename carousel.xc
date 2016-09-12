@@ -7,14 +7,12 @@
     // false - Disable customizable carousel.
     // false - Отключить настраиваемую карусель.
     "enabled": ${"carousel/enabled.xc":"enabled"},
-
     // Scale of carousel cells.
     // Масштаб ячеек карусели.
     "zoom": 0.8,
     // Number of rows at carousel.
     // Количество рядов карусели.
     "rows": ${"carousel/rows.xc":"rows"},
-
     // Spacing between carousel cells.
     // Отступ между ячейками карусели.
     "padding": {
