@@ -3,15 +3,26 @@
  * Лог попаданий (счетчик своих попаданий).
  */
 {
-   "paramsHitlog": {
-    "enabled": true,
-    "updateEvent": "ON_DAMAGE_CAUSED",
-    "x": 270,
-	"y": ${"hitLog/hitLogYposition.xc":"y"},
-    "width": 500,
-    "height": 1000,
-    "textFormat": { "color": "0xF4EFE8", "size": 15 },
-    "format": "{{hitlog-header}}\n{{hitlog-body}}"
+    "hitlogHeader": {
+      "enabled": true,
+      "updateEvent": "ON_DAMAGE_CAUSED, ON_PANEL_MODE_CHANGED",
+	  "x": ${"hitLog/hitLogXY.xc":"HeaderX"},
+	  "y": ${"hitLog/hitLogXY.xc":"HeaderY"},
+      "width": 500,
+      "height": 1000,
+      "textFormat": { "color": "0xF4EFE8", "size": 15 },
+      "format": "{{hitlog-header}}\n{{hitlog-body}}"
+    },
+    "hitlogBody": {
+      "enabled": false,
+      "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": false,
+      "updateEvent": "ON_DAMAGE_CAUSED, ON_PANEL_MODE_CHANGED",
+      "x": "{{pp.mode=0?5|{{py:math.sum({{pp.widthLeft}},50)}}}}",
+	  "y": ${"hitLog/hitLogXY.xc":"BodyY"},
+      "width": 500,
+      "height": 1000,
+      "textFormat": { "color": "0xF4EFE8", "size": 15 },
+      "format": "{{hitlog-body}}"
     },
   "hitLog": {
     // Group hits by players name.

@@ -6,7 +6,7 @@
   "minimap": {
     // false - Disable.
     // false - отключить.
-    "enabled": false,
+    "enabled": true,
     // Map image transparency.
     // Прозрачность изображения карты.
     "mapBackgroundImageAlpha": 100,
@@ -39,10 +39,10 @@
     "zoom": {
       // Number of pixels to get back from maximum size (screen height-minimap height).
       // Число пикселей для уменьшения миникарты от максимального размера (высота экрана-высота миникарты).
-      "pixelsBack": 449,
+      "pixelsBack": 250,
       // false - does not set zoomed minimap at display center.
       // false - не устанавливать увеличенную миникарту по центру экрана.
-      "centered": false
+      "centered": true
     },
     // Map size label
     // Поле размера карты

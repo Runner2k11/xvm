@@ -59,8 +59,8 @@
       "xvm_sixthSenseRudy": "",
       // Enemy detection (Use in together with disable original enemy detection event) 
       // Обнаружение противника (Используйте вместе с отключением оригинального звука обнаружения противника)
-      "xvm_enemySighted": "", 
-      //"xvm_enemySighted": "",
+      "xvm_enemySighted": "",
+      //"xvm_enemySighted": "", 
       //"xvm_enemySighted": "",      
       // Fire alert (Use in together with disable original event)
       // Пожар (Используйте вместе с отключением оригинального звука)
@@ -72,17 +72,17 @@
       // Notifications informing about the imminent end of the battle (Use in together with disable original event)
       // Оповещения сообщающие о скором завершении боя (Используйте вместе с отключением оригинального звука)
       "xvm_battleEnd_5_min": "",
-      //"xvm_battleEnd_5_min": "battleEnd_5_min",
+      //"xvm_battleEnd_5_min": "xvm_battleEnd_5_min",
       "xvm_battleEnd_3_min": "",
-      //"xvm_battleEnd_3_min": "battleEnd_3_min",
+      //"xvm_battleEnd_3_min": "xvm_battleEnd_3_min",
       "xvm_battleEnd_2_min": "",
-      //"xvm_battleEnd_2_min": "battleEnd_2_min",
+      //"xvm_battleEnd_2_min": "xvm_battleEnd_2_min",
       "xvm_battleEnd_1_min": "",
-      //"xvm_battleEnd_1_min": "battleEnd_1_min",
+      //"xvm_battleEnd_1_min": "xvm_battleEnd_1_min",
       "xvm_battleEnd_30_sec": "",
-      //"xvm_battleEnd_30_sec": "battleEnd_30_sec",
+      //"xvm_battleEnd_30_sec": "xvm_battleEnd_30_sec",
       "xvm_battleEnd_5_sec": ""
-      //"xvm_battleEnd_5_sec": "battleEnd_5_sec"
+      //"xvm_battleEnd_5_sec": "xvm_battleEnd_5_sec"
     }
   }
 }

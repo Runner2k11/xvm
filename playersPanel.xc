@@ -41,14 +41,15 @@
  * fields available for MovieClip format only:
  *   "highlight" - highlight icon depending on the player state, default false
  *
- * fields available for players panel only:
+ * fields available for players panel and statistic form only:
  *   "layer": field z-order
  *     values:
  *     "substrate": put field behind all standard fields, x value depends on the players panel width
  *     "bottom": put field behind all standard fields, x value does not depend on the players panel width
- *     "normal": put field between vehicle icon and standard text fields (default)
+ *     "normal": put field above vehicle icon but behind standard text fields (default)
  *     "top": put field above standard fields
  *
+ * text format and shadow:
  *   http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextFormat.html
  *   "textFormat": {
  *     "font"
@@ -81,26 +82,43 @@
  *   }
  */
 {
-  // Enemy spotted status marker definition.
-  // Шаблон маркера статуса засвета противника.
+  // Definitions
+  // Шаблоны
+  "def": {
+    // Enemy spotted status marker.
+    // Маркер статуса засвета противника.
   "enemySpottedMarker": ${"Spotted/enemySpottedMarker.xc":"enemySpottedMarker"},
-  // XMQP service marker definition.
-  // Шаблон маркера сервиса XMQP.
+    // XMQP service marker definition.
+    // Шаблон маркера сервиса XMQP.
   "xmqpServiceMarker": ${"xmqp/xmqpServiceMarker.xc":"xmqpServiceMarker"},
-  // Clan icon definition.
-  // Шаблон иконки клана.
-  "clanIcon": {
-    "enabled": true,
-    "x": 65, "y": 6, "width": 16, "height": 16, "align": "center", "alpha": 90, "bindToIcon": true,
-    "src": "{{clanicon}}"
-    //"format": "<img src='{{clanicon}}' width='16' height='16'>"
-  },
-  // Is XVM user marker definition.
-  // Шаблон маркера пользователя XVM.
-  "xvmUserMarker": {
-    "enabled": false,
-    "x": 10, "y": 5, "bindToIcon": true,
-    "src": "xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png"
+    // Clan icon.
+    // Иконка клана.
+    "clanIcon": {
+      "enabled": true,
+      "x": 65, "y": 6, "width": 16, "height": 16, "align": "center", "alpha": 90, "bindToIcon": true,
+      "src": "{{clanicon}}"
+      //"format": "<img src='{{clanicon}}' width='16' height='16'>"
+    },
+    // XVM user marker.
+    // Маркер пользователя XVM.
+    "xvmUserMarker": {
+      "enabled": false,
+      "x": 10, "y": 5, "bindToIcon": true,
+      "src": "xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png"
+    //},
+	}
+    // HP bar background.
+    // Подложка индикатора HP.
+    //"hpBarBg": { "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": true, "x": 96, "y": 6, "width": 72, "bindToIcon": true, "height": 14, "bgColor": "0x000000", "alpha": "{{alive?35|0}}" },
+    // HP bar.
+    // Индикатор HP.
+    //"hpBar": { "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": true, "x": 97, "y": 7, "bindToIcon": true, "width": "{{hp-ratio:70}}", "height": 12, "bgColor": "{{player?#FFDD33|{{c:system}}}}", "alpha": "{{alive?50|0}}" },
+    // Remaining HP.
+    // Оставшиеся HP.
+    //"hp": { "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": true, "x": 132, "y": 4, "bindToIcon": true, "align": "center", "alpha": "{{alive?100|0}}",
+    //  "format": "<font face='$FieldFont' size='11' color='#D9D9D9' alpha='{{alive?{{ready?#FF|#80}}|#80}}'><b>{{alive?{{hp|{{l10n:No data}}}}|{{l10n:Destroyed}}}}</b></font>",
+    //  "shadow": { "enabled": true, "color": "0x000000", "alpha": 100, "blur": 4, "strength": 1, "distance": 0, "angle": 0 }
+    //}
   },
   // Parameters of the Players Panels ("ears").
   // Параметры панелей игроков ("ушей").
@@ -137,6 +155,18 @@
       // Layout ("vertical" or "horizontal")
       // Размещение ("vertical" - вертикально, или "horizontal" - горизонтально)
       "layout": "vertical",
+      // true - don't change players positions on dead (default false)
+      // true - не изменять позиции игроков при уничтожении (по умолчанию false)
+      "fixedPosition": false,
+      // Opacity of dynamic squad invite indicator
+      // Прозрачность индикатора приглашения в динамический взвод
+      "inviteIndicatorAlpha": 100,
+      // X position offset of dynamic squad invite indicator
+      // Позиция X индикатора приглашения в динамический взвод
+      "inviteIndicatorX": 0,
+      // Y position offset of dynamic squad invite indicator
+      // Позиция Y индикатора приглашения в динамический взвод
+      "inviteIndicatorY": 0,
       // Extra fields.
       // Дополнительные поля.
       "extraFields": {
@@ -148,7 +178,7 @@
           // Set of formats for left panel
           // Набор форматов для левой панели
           // example:
-          // "format": [
+          // "formats": [
           //   // simple format (just a text)
           //   "{{nick}}",
           //   "<img src='xvm://res/img/panel-bg-l-{{alive|dead}}.png' width='318' height='28'>",

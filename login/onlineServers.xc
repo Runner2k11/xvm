@@ -51,16 +51,16 @@
         // Font name
         // Название шрифта
         "name": "$TextFont",
-        "size": 12,         // Размер
-        "bold": false,      // Жирный
-        "italic": false,    // Курсив
+        "size": 12, // Размер
+        "bold": false,  // Жирный
+        "italic": false, // Курсив
         // Different colors depending on people online
         // Разные цвета в зависимости от количества игроков
         "color": {
-          "great": "0x60ff00",  // Отличный
-          "good":  "0xF8F400",  // Хороший
-          "poor":  "0xFE7903",  // Так себе
-          "bad":   "0xFE0E00"   // Плохой
+          "great": "0x60ff00", // Отличный
+          "good": "0xF8F400",  // Хороший
+          "poor": "0xFE7903",  // Так себе
+          "bad": "0xFE0E00"    // Плохой
         },
         // Color for server name and delimiter (for example, "0x8080FF"). Empty string "" - use same color as online value
         // Цвет для названия сервера и разделителя (например, "0x8080FF"). Пустая строка "" - использовать цвет значения онлайна
@@ -75,12 +75,13 @@
         //below this value the queue might be long
         //ниже этого значения очередь может быть долгой
       },
+      // Shadow options
       // Параметры тени
       "shadow": {
         "enabled": true,
-        "color": "0x000000",
         "distance": 0,
         "angle": 0,
+        "color": "0x000000",
         "alpha": 70,
         "blur": 4,
         "strength": 2
