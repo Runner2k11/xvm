@@ -52,13 +52,13 @@
     "mapSize": ${"minimapMapSize.xc":"mapSize"},
     // Use standard circles
     // Использовать стандартные круги
-    "useStandardCircles": ${"minimap/useStandardCircles.xc":"useStandardCircles"},
+    "circlesEnabled": ${"minimap/circlesEnabled.xc":"circlesEnabled"},
     // Use standard labels
     // Использовать стандартные надписи
-    "useStandardLabels": ${"minimap/useStandardLabels.xc":"useStandardLabels"},
+    "labelsEnabled": ${"minimap/labelsEnabled.xc":"labelsEnabled"},
     // Use standard lines
     // Использовать стандартные линии
-    "useStandardLines": ${"minimap/useStandardLines.xc":"useStandardLines"},
+    "linesEnabled": ${"minimap/linesEnabled.xc":"linesEnabled"},
     // Minimap labels.
     // Надписи на миникарте.
     "labels": ${"minimapLabels.xc":"labels"},

@@ -4,7 +4,6 @@
  */
 {
   "circles": {
-    // TODO: better description and translation
     // View distance
     // Дальность обзора
     // Параметры:
@@ -48,10 +47,10 @@
     // Дальнобойность арты может меняться в зависимости от углов постановки машины на склонах местности
     // и высоте расположения машины относительно цели. На миникарте эти факторы не учитываются.
     // Подробнее по ссылке: http://goo.gl/ZqlPa
-    "artillery": { "enabled": true, "alpha": 55, "color": "0xFF6666", "thickness": 0.5 },
+    "artillery": { "enabled": true, "alpha": 55, "color": "0x3eb5f1", "thickness": 0.5 },
     // Maximum range of shooting for machine gun
     // Максимальная дальность полета снаряда для пулеметных танков
-    "shell":     { "enabled": true, "alpha": 55, "color": "0xFF6666", "thickness": 0.5 },
+    "shell":     { "enabled": true, "alpha": 55, "color": "0x3eb5f1", "thickness": 0.5 },
     // Special circles dependent on vehicle type.
     // Many configuration lines for the same vehicle make many circles.
     // See other vehicle types at (replace : symbol with -):

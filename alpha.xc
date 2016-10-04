@@ -46,8 +46,8 @@
     // Динамическая прозрачность по проценту оставшегося здоровья.
     "hp_ratio": [
       { "value": 10,  "alpha": ${"alphaHP.very_low"     } },
-      { "value": 30,  "alpha": ${"alphaHP.low"          } },
-      { "value": 31,  "alpha": ${"alphaHP.average"      } },
+      { "value": 25,  "alpha": ${"alphaHP.low"          } },
+      { "value": 50,  "alpha": ${"alphaHP.average"      } },
       { "value": 101, "alpha": ${"alphaHP.above_average"} }
     ],
     // Dynamic transparency for XVM Scale
