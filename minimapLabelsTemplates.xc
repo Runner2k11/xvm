@@ -36,6 +36,18 @@
       "textFormat": { "font": "xvm", "size": 13, "align": "center", "valign": "center" },
       "format": "<font color='{{.minimap.labelsData.colors.dot.{{sys-color-key}}}}'>{{.minimap.labelsData.vtype.{{vtype-key}}}}</font>"
     },
+	// ХП игрока, видимый
+    "HPSpotted": {
+      "$ref": { "path":"def.defaultItem" },
+      "align": "center",
+      "valign": "center",
+      "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
+      "layer": "bottom",
+      "textFormat": { "font": "dynamic", "size": "{{vtype-key=HT?22|18}}", "align": "center", "valign": "center" },
+      "format": "<font color='{{.minimap.labelsData.colors.dot.{{sys-color-key}}}}'>{{hp-ratio%.335a|&#x1B3;}}</font>",
+	  "x": -0.1,
+      "y": 0.8
+    },
     // Vehicle name, visible
     // Название техники, видимый
     "vehicleSpotted": {
@@ -152,30 +164,18 @@
       "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'><i>{{name%.7s~..}}</i></font>",
       "shadow": { "$ref": { "path":"def.defaultItem.shadow" }, "strength": 3 }
     },
-	// ХП игрока, видимый
-    "HPSpotted": {
-      "$ref": { "path":"def.defaultItem" },
-      "align": "center",
-      "valign": "center",
-      "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
-      "layer": "top",
-      "textFormat": { "font": "dynamic", "size": 18, "align": "center", "valign": "center" },
-      "format": "<font color='{{.minimap.labelsData.colors.dot.{{sys-color-key}}}}'>{{hp-ratio%.335a|&#x1B3;}}</font>",
-	  "x": 0.2,
-      "y": 0.8
-  },
 	// ХП игрока, пропавший
     "HPLost": {
       "$ref": { "path":"def.defaultItem" },
       "align": "center",
       "valign": "center",
-      "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
-      "layer": "top",
-      "textFormat": { "font": "dynamic", "size": 18, "align": "center", "valign": "center" },
+      "flags": [ "lost" ],
+      "layer": "bottom",
+      "textFormat": { "font": "dynamic", "size": "{{vtype-key=HT?22|18}}", "align": "center", "valign": "center" },
       "format": "<font color='{{.minimap.labelsData.colors.lostDot.{{sys-color-key}}}}'>{{hp-ratio%.335a|&#x1B3;}}</font>",
       "alpha": 75,
-	  "x": 0.2,
-      "y": 0.8
+	  "x": 0.3,
+      "y": 1.8
 	}
   }
 }

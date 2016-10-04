@@ -4,6 +4,5 @@
  */
 {
       // Уровень боев.
-"format1": "",
-"format2": ""
+"enabled": false
 }

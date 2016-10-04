@@ -4,5 +4,5 @@
  */
 {
       // Процент побед.
-"format": "<font face='$FieldFont' size='12' color='{{v.c_winrate}}'>{{v.winrate%d~%| }}</font>"
+"enabled": true
 }

@@ -1,5 +1,5 @@
 ﻿{
     // Circle of the maximum units appearance.
     // Окружность границы максимальной отрисовки юнитов.
-    "minimapAppearance": false
+    "minimapAppearance": "{{my-vtype-key=SPG?false|true}}"
 }

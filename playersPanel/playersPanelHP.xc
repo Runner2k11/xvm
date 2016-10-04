@@ -1,6 +1,22 @@
 ﻿{
-
-    // Options for the "short" panels - panels with frags and vehicle icon.
+    "hpAlt": {
+    // HP bar background.
+    // Подложка индикатора HP.
+    "hpBarBg": { "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": true, "x": 96, "y": 6, "width": 72, "bindToIcon": true, "height": 14, "bgColor": "0x000000", "alpha": "{{alive?35|0}}" },
+    // HP bar.
+    // Индикатор HP.
+    "hpBar": { "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": true, "x": 97, "y": 7, "bindToIcon": true, "width": "{{hp-ratio:70}}", "height": 12, "bgColor": "{{player?#FFDD33|{{c:system}}}}", "alpha": "{{alive?50|0}}" },
+    // Remaining HP.
+    // Оставшиеся HP.
+    "hp": {
+      "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": true, "bindToIcon": true, "alpha": "{{alive?100|0}}",
+      "x": 96, "width": 72, "y": 4,
+      "textFormat": { "font": "$FieldFont", "size": 11, "color": "0xD9D9D9", "bold": "true", "align": "center" },
+      "format": "<font alpha='{{alive?{{ready?#FF|#80}}|#80}}'>{{alive?{{hp|{{l10n:No data}}}}|{{l10n:Destroyed}}}}</font>",
+      "shadow": { "enabled": true, "color": "0x000000", "alpha": 100, "blur": 4, "strength": 1, "distance": 0, "angle": 0 }
+    }
+  },
+	// Options for the "short" panels - panels with frags and vehicle icon.
     // Режим ушей "short" - короткие уши (фраги и иконка танка).
     "short": {
       // false - disable (отключить)
@@ -88,14 +104,20 @@
       // Set of formats for left panel (extended format supported, see above)
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsLeft": [
-        ${"../playersPanel.xc":"def.clanIcon"},
-        ${"../playersPanel.xc":"def.xvmUserMarker"}
+        ${"hpAlt.hpBarBg"},
+        ${"hpAlt.hpBar"},
+        ${"hpAlt.hp"},
+		${"../playersPanel.xc":"def.clanIcon"},
+		${"../playersPanel.xc":"def.xvmUserMarker"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
-        ${"../playersPanel.xc":"def.clanIcon"},
-        ${"../playersPanel.xc":"def.xvmUserMarker"},
+        ${"hpAlt.hpBarBg"},
+        ${"hpAlt.hpBar"},
+        ${"hpAlt.hp"},
+		${"../playersPanel.xc":"def.clanIcon"},
+		${"../playersPanel.xc":"def.xvmUserMarker"},
         // enemy spotted status marker (see above).
         // маркер статуса засвета противника (см. выше).
         ${"../Spotted/enemySpottedMarker.xc":"enemySpottedMarker"}
@@ -187,14 +209,20 @@
       // Set of formats for left panel (extended format supported, see above)
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsLeft": [
-        ${"../playersPanel.xc":"def.clanIcon"},
-        ${"../playersPanel.xc":"def.xvmUserMarker"}
+        ${"hpAlt.hpBarBg"},
+        ${"hpAlt.hpBar"},
+        ${"hpAlt.hp"},
+		${"../playersPanel.xc":"def.clanIcon"},
+		${"../playersPanel.xc":"def.xvmUserMarker"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
-        ${"../playersPanel.xc":"def.clanIcon"},
-        ${"../playersPanel.xc":"def.xvmUserMarker"},
+        ${"hpAlt.hpBarBg"},
+        ${"hpAlt.hpBar"},
+        ${"hpAlt.hp"},
+		${"../playersPanel.xc":"def.clanIcon"},
+		${"../playersPanel.xc":"def.xvmUserMarker"},
         // enemy spotted status marker (see above).
         // маркер статуса засвета противника (см. выше).
         ${"../Spotted/enemySpottedMarker.xc":"enemySpottedMarker"}
@@ -286,14 +314,20 @@
       // Set of formats for left panel (extended format supported, see above)
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsLeft": [
-        ${"../playersPanel.xc":"def.clanIcon"},
-        ${"../playersPanel.xc":"def.xvmUserMarker"}
+        ${"hpAlt.hpBarBg"},
+        ${"hpAlt.hpBar"},
+        ${"hpAlt.hp"},
+		${"../playersPanel.xc":"def.clanIcon"},
+		${"../playersPanel.xc":"def.xvmUserMarker"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
-        ${"../playersPanel.xc":"def.clanIcon"},
-        ${"../playersPanel.xc":"def.xvmUserMarker"},
+        ${"hpAlt.hpBarBg"},
+        ${"hpAlt.hpBar"},
+        ${"hpAlt.hp"},
+		${"../playersPanel.xc":"def.clanIcon"},
+		${"../playersPanel.xc":"def.xvmUserMarker"},
         // enemy spotted status marker (see above).
         // маркер статуса засвета противника (см. выше).
         ${"../Spotted/enemySpottedMarker.xc":"enemySpottedMarker"}
@@ -382,14 +416,20 @@
       // Set of formats for left panel (extended format supported, see above)
       // Набор форматов для левой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsLeft": [
-        ${"../playersPanel.xc":"def.clanIcon"},
-        ${"../playersPanel.xc":"def.xvmUserMarker"}
+        ${"hpAlt.hpBarBg"},
+        ${"hpAlt.hpBar"},
+        ${"hpAlt.hp"},
+		${"../playersPanel.xc":"def.clanIcon"},
+		${"../playersPanel.xc":"def.xvmUserMarker"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
-        ${"../playersPanel.xc":"def.clanIcon"},
-        ${"../playersPanel.xc":"def.xvmUserMarker"},
+        ${"hpAlt.hpBarBg"},
+        ${"hpAlt.hpBar"},
+        ${"hpAlt.hp"},
+		${"../playersPanel.xc":"def.clanIcon"},
+		${"../playersPanel.xc":"def.xvmUserMarker"},
         // enemy spotted status marker (see above).
         // маркер статуса засвета противника (см. выше).
         ${"../Spotted/enemySpottedMarker.xc":"enemySpottedMarker"}
