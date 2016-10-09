@@ -9,7 +9,7 @@
     "enabled": ${"carousel/enabled.xc":"enabled"},
     // Type of cells - "default" (depends from window size), "normal" or "small"
     // Вид ячеек - "default" (в зависимости от размера окна), "normal" (обычные), "small" (маленькие)
-    "cellType": "default",
+    "cellType": ${"carousel/cellType.xc":"cellType"},
     // Normal cells settings
     // Настройки ячеек обычного размера
     "normal": ${"carouselNormal.xc":"normal"},
