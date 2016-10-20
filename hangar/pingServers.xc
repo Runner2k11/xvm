@@ -10,7 +10,7 @@
       "updateInterval": 15000,
       // Axis field coordinates
       // Положение поля по осям
-      "x": 5,
+      "x": 85,
       "y": 53,
       // Horizontal alignment of field at screen ("left", "center", "right").
       // Горизонтальное выравнивание поля на экране ("left", "center", "right").
