@@ -170,39 +170,6 @@
       },
       "format": "&#x115;"
     },
-    // Text field with the XMQP event marker.
-    // Текстовое поле с маркером события XMQP.
-    "xmqpEvent": {
-      "name": "xmqp event",           //  название текстового поля, ни на что не влияет
-      "enabled": true,                //  false - не отображать
-      "x": 0,                         //  положение по оси X
-      "y": "{{battletype?-71|{{squad?-71|-56}}}}",  //  положение по оси Y
-      "alpha": 100,                   //  прозрачность (допускается использование динамической прозрачности, см. macros.txt)
-      "align": "center",              //  выравнивание текста (left, center, right)
-      // Font options.
-      // Параметры шрифта.
-      "textFormat": {
-        "font": "xvm",                //  название
-        "size": 23,                   //  размер
-        "color": "0xFFBB00",          //  цвет (допускается использование динамического цвета, см. macros.txt)
-        "bold": false,                //  обычный (false) или жирный (true)
-        "italic": false               //  обычный (false) или курсив (true)
-      },
-      // Shadow options.
-      // Параметры тени.
-      "shadow": {
-        // false - no shadow
-        // false - без тени
-        "enabled": true,
-        "distance": 0,                //  дистанция смещения
-        "angle": 45,                  //  угол смещения
-        "color": "0x000000",          //  цвет
-        "alpha": 100,                 //  прозрачность
-        "blur": 4,                    //  размытие
-        "strength": 1                 //  интенсивность
-      },
-      "format": "<font color='{{x-spotted?#FFBB00|#FFFFFF}}' alpha='{{x-spotted?#FF|#80}}'>{{x-spotted?&#x70;|{{x-sense-on?&#x70;}}}}</font> {{x-overturned?&#x112;}}"  //  формат текста. См. описание макросов в macros.txt
-    },
     // Position of the player
     // Порядковый номер игрока
     "position": {
@@ -333,14 +300,14 @@
       "y": -67,          // Position on the Y axis / Положение по оси Y.
       "alpha": 100       // Opacity                / Прозрачность.
     },
-    // Block of text fields.
-    // Блок текстовых полей.
+    // Block of text fields (extended format supported, see extra-field.txt).
+    // Блок текстовых полей (поддерживается расширенный формат, см. extra-field.txt).
     "textFields": [
       ${ "def.tankName" },
       ${ "def.playerName" },
       ${ "def.tankHp" },
       ${ "def.rating" },
-      ${ "def.xmqpEvent" }
+      ${ "xmqp/xmqpMarkersAlive.xc":"xmqpEvent" }
     ]
   },
   // Настройки для противников.
@@ -418,8 +385,8 @@
       "y": -67,
       "alpha": 100
     },
-    // Block of text fields.
-    // Блок текстовых полей.
+    // Block of text fields (extended format supported, see extra-field.txt).
+    // Блок текстовых полей (поддерживается расширенный формат, см. extra-field.txt).
     "textFields": [
       ${ "def.tankName" },
       ${ "def.tankHp" },

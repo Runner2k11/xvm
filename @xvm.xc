@@ -58,15 +58,15 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "04.10.2016",
+    "date": "07.11.2016",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "0.9.15.2",
+    "gameVersion": "0.9.16",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "6.4.5.1"
+    "modMinVersion": "6.4.8"
   },
 
   // Parameters for login screen.
@@ -85,10 +85,6 @@
   // Общие параметры боевого интерфейса.
   "battle": ${"battle.xc":"battle"},
 
-  // Battle interface text fields
-  // Текстовые поля боевого интерфейса
-  "battleLabels": ${"battleLabels.xc":"labels"},
-
   // Frag counter panel.
   // Панель счёта в бою.
   "fragCorrelation": ${"battle.xc":"fragCorrelation"},
@@ -96,6 +92,10 @@
   // Ingame crits panel by "expert" skill.
   // Внутриигровая панель критов от навыка "эксперт".
   "expertPanel": ${"battle.xc":"expertPanel"},
+
+  // Battle interface text fields
+  // Текстовые поля боевого интерфейса
+  "battleLabels": ${"battleLabels.xc":"labels"},
 
   // Special XVM hotkeys.
   // Специальные горячие клавиши XVM.

@@ -63,9 +63,9 @@
       // Start zoom value (null for default behavior - last used state)
       // Начальное значение кратности (null для поведения по умолчанию - последнее использовавшееся значение)
       "startZoom": null,
-      // Zoom Indicator (see playersPanel.xc for parameters description)
+      // Zoom Indicator (see extra-field.txt for parameters description)
       // Global macros allowed in all fields
-      // Индикатор масштаба (см. playersPanel.xc для описания параметров)
+      // Индикатор масштаба (см. extra-field.txt для описания параметров)
       // Можно использовать глобальные макросы во всех полях
       "zoomIndicator": {
         // false - disable.
@@ -85,12 +85,6 @@
         "rotation": 0,
         "scaleX": 1,
         "scaleY": 1,
-        // Horizonatal text alignment (left, center, right)
-        // Горизонтальное выравнивание текста (left, center, right)
-        "align": "left",
-        // Vertical text alignment (top, center, bottom)
-        // Вертикальное выравнивание текста (top, center, bottom)
-        "valign": "center",
         // Background color
         // Цвет фона
         "bgColor": null,
@@ -98,9 +92,16 @@
         // Цвет рамки
         "borderColor": null,
         "antiAliasType": "advanced",
+        "textFormat": {
+          "font": "$TitleFont",
+          "size": 16,
+          "color": "0x95CB29",
+          "align": "left",
+          "valign": "center"
+        },
         // Text format
         // Формат текста
-        "format": "<font face='$TitleFont' color='#95CB29' size='16'>x{{zoom}}</font>",
+        "format": "x{{zoom}}",
         // Shadow options
         // Параметры тени
         "shadow": {
