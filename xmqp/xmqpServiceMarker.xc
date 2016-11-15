@@ -2,8 +2,12 @@
   // XMQP service marker definition.
   // Шаблон маркера сервиса XMQP.
   "xmqpServiceMarker": {
-    "x": 6, "y": 1, "align": "center", "bindToIcon": true, 
-    "format": "",
-    "shadow": {}
+      "x": 88, "y": -2, "align": "center", "bindToIcon": true,
+      "textFormat": {
+        "font": "xvm",
+        "size": 24
+      },
+      "format": "",
+      "shadow": {}
   }
 }

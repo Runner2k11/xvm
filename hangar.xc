@@ -31,6 +31,9 @@
     // true - Return crew check box is selected by default
     // true - Включить галочку возврата экипажа по умолчанию
 	"crewReturnByDefault": ${"hangar/CrewAutoReturn.xc":"crewReturnByDefault"},
+    // Number of perks to show without grouping
+    // Количество перков, которые отображаются без группировки
+    "crewMaxPerksCount": 8,
     // true - Show flags in barracks
     // true - Показывать флаги в казарме
     "barracksShowFlags": true,
@@ -67,10 +70,19 @@
       // Rotation in degrees [0..360].
       // Угол поворота в градусах [0..360].
       "rotation": 0,
+      // Shift X position
+      // Сдвиг по оси X
+      "shiftX": 0,
       // Shift Y position
       // Сдвиг по оси Y
       "shiftY": 0
     },
+    // Show "Buy premium" button
+    // Показать кнопку "Купить премиум"
+    "showBuyPremiumButton": true,
+    // Show "Premium shop" button
+    // Показать кнопку "Премиум магазин"
+    "showPremiumShopButton": true,
     // Parameters for tank carousel
     // Параметры карусели танков
     "carousel": ${"carousel.xc":"carousel"},

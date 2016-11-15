@@ -30,6 +30,8 @@
       // Disable original sixth sense light bulb sound event
       // Отключить оригинальный звук лампы шестого чувства
       "lightbulb": "",
+      "lightbulb_02": "",
+      "sixthSense": "",
       //
       // Disable original enemy detection event      
       // Отключить оригинальный звук обнаружения противника

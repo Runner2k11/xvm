@@ -89,7 +89,7 @@
       "y": -7,
       "flags": [ "ally", "squadman", "teamKiller", "spotted", "alive" ],
       "textFormat": { "font": "xvm", "size": 8, "color": "0xFFBB00" },
-      "format": "{{x-spotted?&#x70;&nbsp;}}{{x-overturned?&#x112;}}"
+      "format": ${ "xmqp/xmqpEventMarker.xc":"xmqpEvent" }
     },
     // Vehicle type, missing
     // Тип техники, пропавший

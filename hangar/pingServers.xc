@@ -33,9 +33,9 @@
       // Leading between lines.
       // Пространство между строками
       "leading": 0,
-      // true - place at top of other windows, false - at bottom.
-      // true - отображать поверх остальных окон, false - под.
-      "topmost": true,
+      // layer - "bottom", "normal" (default), "top".
+      // слой - "bottom", "normal" (по-умолчанию), "top".
+      "layer": "normal",
       // true - show title "Ping"
       // true - показывать заголовок "Пинг"
       "showTitle": false,
@@ -93,15 +93,18 @@
         // Values above define bad response
         // Значения более считаются плохим откликом
       },
+      // Shadow options
       // Параметры тени
       "shadow": {
+        // false - no shadow
+        // false - без тени
         "enabled": true,
-        "color": "0x000000",
-        "distance": 0,
-        "angle": 0,
-        "alpha": 70,
-        "blur": 4,
-        "strength": 2
+        "distance": 0,             // (in pixels)     / offset distance / дистанция смещения
+        "angle": 0,                // (0.0 .. 360.0)  / offset angle    / угол смещения
+        "color": "0x000000",       // "0xXXXXXX"      / color           / цвет
+        "alpha": 70,               // (0 .. 100)      / opacity         / прозрачность
+        "blur": 4,                 // (0.0 .. 255.0)  / blur            / размытие
+        "strength": 2              // (0.0 .. 255.0)  / intensity       / интенсивность
       }
    }
 }

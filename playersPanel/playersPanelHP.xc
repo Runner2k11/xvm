@@ -108,7 +108,8 @@
         ${"hpAlt.hpBar"},
         ${"hpAlt.hp"},
 		${"../playersPanel.xc":"def.clanIcon"},
-		${"../playersPanel.xc":"def.xvmUserMarker"}
+		${"../playersPanel.xc":"def.xvmUserMarker"},
+		${"../xmqp/xmqpServiceMarker.xc":"xmqpServiceMarker"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -213,7 +214,8 @@
         ${"hpAlt.hpBar"},
         ${"hpAlt.hp"},
 		${"../playersPanel.xc":"def.clanIcon"},
-		${"../playersPanel.xc":"def.xvmUserMarker"}
+		${"../playersPanel.xc":"def.xvmUserMarker"},
+		${"../xmqp/xmqpServiceMarker.xc":"xmqpServiceMarker"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -318,7 +320,8 @@
         ${"hpAlt.hpBar"},
         ${"hpAlt.hp"},
 		${"../playersPanel.xc":"def.clanIcon"},
-		${"../playersPanel.xc":"def.xvmUserMarker"}
+		${"../playersPanel.xc":"def.xvmUserMarker"},
+		${"../xmqp/xmqpServiceMarker.xc":"xmqpServiceMarker"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -420,7 +423,8 @@
         ${"hpAlt.hpBar"},
         ${"hpAlt.hp"},
 		${"../playersPanel.xc":"def.clanIcon"},
-		${"../playersPanel.xc":"def.xvmUserMarker"}
+		${"../playersPanel.xc":"def.xvmUserMarker"},
+		${"../xmqp/xmqpServiceMarker.xc":"xmqpServiceMarker"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
