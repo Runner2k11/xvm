@@ -46,7 +46,7 @@
       "xp":       { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       // Vehicle name.
       // Название танка.
-      "tankName": { "enabled": true, "dx": 0, "dy": 0.1, "alpha": 100, "scale": 0.9 },
+      "tankName": { "enabled": true, "dx": 0, "dy": 0.1, "alpha": 100, "scale": 1 },
       // Vehicle rent info text.
       // Инфо текст аренды танка.
       "rentInfo": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
