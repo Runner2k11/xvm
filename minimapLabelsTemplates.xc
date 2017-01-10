@@ -174,8 +174,8 @@
       "textFormat": { "font": "dynamic", "size": "{{vtype-key=HT?22|18}}", "align": "center", "valign": "center" },
       "format": "<font color='{{.minimap.labelsData.colors.lostDot.{{sys-color-key}}}}'>{{hp-ratio%.335a|&#x1B3;}}</font>",
       "alpha": 75,
-	  "x": 0.3,
-      "y": 1.8
+	  "x": 0.1,
+      "y": 0.9
 	}
   }
 }
