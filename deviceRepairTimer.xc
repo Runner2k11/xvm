@@ -5,7 +5,6 @@
 			"height": 40,
 			"screenHAlign": "left",
 			"screenVAlign": "bottom",
-			//"borderColor": "0xFFFFFF",
 			"shadow": {
 				"distance": 1,
 				"angle": 90,
