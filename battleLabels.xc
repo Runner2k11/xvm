@@ -9,11 +9,11 @@
     "formats": [
       ${ "hitLog.xc":"hitlogHeader" },
       ${ "hitLog.xc":"hitlogBody" },
-	  ${ "deviceRepairTimer.xc":"def.repairTimeEngine" },
-	  ${ "deviceRepairTimer.xc":"def.repairTimeGun" },
-	  ${ "deviceRepairTimer.xc":"def.repairTimeTurret" },
-	  ${ "deviceRepairTimer.xc":"def.repairTimeTracks" }, 
-	  ${ "deviceRepairTimer.xc":"def.repairTimeSurveying"}
+	  ${ "repairTime.xc":"def.repairTimeEngine" },
+	  ${ "repairTime.xc":"def.repairTimeGun" },
+	  ${ "repairTime.xc":"def.repairTimeTurret" },
+	  ${ "repairTime.xc":"def.repairTimeTracks" }, 
+	  ${ "repairTime.xc":"def.repairTimeSurveying"}
     ]
   }
 }
