@@ -45,12 +45,13 @@
     // true - disable standard summarized damage.
     // true - отключить стандартный суммарный урон.
     "disabledSummaryStats": false,
-    //TO DO
-    //true - запоминать местоположение лога и последенего урона в бою
-    "saveLocationInBattle": false,
     // Log of the received damage.
     // Лог полученного урона.
     "log": {
+      //TO DO
+      //true - разрешено перемещать в бою лог полученного урона, макросы в "x" и "y" не работают
+      //false - запрещено перемещать в бою лог полученного урона, макросы в "x" и "y" работают
+      "moveInBattle": false,
       "x": 240,
       "y": -23,
       // Kind of the received damage (macro {{dmg-kind}}).
@@ -219,10 +220,18 @@
       },
       // Damage log format.
       // Формат лога повреждений.
-      "formatHistory": "<textformat tabstops='[30,135,170,185]'><font face='mono' size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{hit-effects}}{{critical-hit}}{{splash-hit}}<tab>{{dmg-kind}}</font><tab><font color='{{c:vtype}}'>{{vtype}}</font><tab><font color='{{c:team-dmg}}'>{{vehicle}}</font></textformat>"
+      "formatHistory": "<textformat tabstops='[30,135,170,185]'><font face='mono' size='12'>{{number%3d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{hit-effects}}{{critical-hit}}{{splash-hit}}<tab>{{dmg-kind}}</font><tab><font color='{{c:vtype}}'>{{vtype}}</font><tab><font color='{{c:team-dmg}}'>{{vehicle}}</font></textformat>"
     },
-    // Log of the received damage with the left Alt key.
-    // Лог полученного урона c нажатой левой клавишей Alt.
+    // TODO.
+    // Подложка лога полученного урона.
+    "logBackground": {
+      "$ref": { "path":"damageLog.log" },
+      // TODO
+      // Формат подложки лога повреждений.
+      "formatHistory": "<img height='20' width='310' src='xvm://res/icons/damageLog/{{dmg=0?no_dmg|dmg}}.png'>"
+    },    
+    // TODO.
+    // Альтернативный лог полученного урона.
     "logAlt": {
       "$ref": { "path":"damageLog.log" },
       // true - show hits without damage, false - not to show.
@@ -230,12 +239,24 @@
       "showHitNoDamage": true,
       // Damage log format.
       // Формат лога повреждений.
-      "formatHistory": "<textformat tabstops='[30,135,170]'><font face='mono' size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{hit-effects}}{{critical-hit}}{{splash-hit}}<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{name}}</font></textformat>"
+      "formatHistory": "<textformat tabstops='[30,135,170]'><font face='mono' size='12'>{{number%3d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{hit-effects}}{{critical-hit}}{{splash-hit}}<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{name}}</font></textformat>"
     },
+    // TODO.
+    // Подложка альтернативного лога полученного урона.
+    "logAltBackground": {
+      "$ref": { "path":"damageLog.logAlt" },
+      // TODO
+      // Формат подложки альтернативного лога полученного урона.
+      "formatHistory": "<img height='20' width='310' src='xvm://res/icons/damageLog/{{dmg=0?no_dmg|dmg}}.png'>"
+    },    
     // Display the last damage (hit).
     // Отображение последнего урона (попадания).
     "lastHit": {
       "$ref": { "path":"damageLog.log" },
+      //TO DO
+      //true - разрешено перемещать поле последнего урона в бою, макросы в "x" и "y" не работают
+      //false - запрещено перемещать поле последнего урона в бою, макросы в "x" и "y" работают
+      "moveInBattle": false,
       "x": -120,
       "y": 200,
       // true - show hits without damage, false - not to show.
