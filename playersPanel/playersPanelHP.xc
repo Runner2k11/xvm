@@ -22,9 +22,9 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "vehicle", "nick".
+      // Available names: "frags", "badge", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
-      // Допустимые названия: "frags", "vehicle", "nick".
+      // Допустимые названия: "frags", "badge", "nick", "vehicle".
       "standardFields": [ "frags" ],
       // Width of area for switching to "large" mode on mouse over
       // Ширина области переключения в режим "large" при наведении мыши
@@ -61,6 +61,13 @@
       // Тень для поля фрагов (по умолчанию null = без тени, как в чистом клиенте).
       "fragsShadowLeft": null,
       "fragsShadowRight": null,
+      // Offset of X value for rank column.
+      // Смещение координаты X для поля ранга.
+      "rankXOffsetLeft": 0,
+      "rankXOffsetRight": 0,
+      // Width of the rank column. Default is 24.
+      // Ширина поля ранга. По умолчанию: 24.
+      "rankWidth": 24,
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
@@ -130,10 +137,10 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "vehicle", "nick".
+      // Available names: "frags", "badge", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
-      // Допустимые названия: "frags", "vehicle", "nick".
-      "standardFields": [ "frags", "nick" ],
+      // Допустимые названия: "frags", "badge", "nick", "vehicle".
+      "standardFields": [ "frags", "badge", "nick" ],
       // Width of area for switching to "large" mode on mouse over
       // Ширина области переключения в режим "large" при наведении мыши
       "expandAreaWidth": 230,
@@ -169,6 +176,13 @@
       // Тень для поля фрагов (по умолчанию null = без тени, как в чистом клиенте).
       "fragsShadowLeft": null,
       "fragsShadowRight": null,
+      // Offset of X value for rank badge column.
+      // Смещение координаты X для поля бейджа ранга.
+      "rankBadgeXOffsetLeft": 0,
+      "rankBadgeXOffsetRight": 0,
+      // Width of the rank badge column. Default is 24.
+      // Ширина поля бейджа ранга. По умолчанию: 24.
+      "rankBadgeWidth": 24,
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
@@ -236,9 +250,9 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "vehicle", "nick".
+      // Available names: "frags", "badge", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
-      // Допустимые названия: "frags", "vehicle", "nick".
+      // Допустимые названия: "frags", "badge", "nick", "vehicle".
       "standardFields": [ "frags", "vehicle" ],
       // Width of area for switching to "large" mode on mouse over
       // Ширина области переключения в режим "large" при наведении мыши
@@ -275,6 +289,13 @@
       // Тень для поля фрагов (по умолчанию null = без тени, как в чистом клиенте).
       "fragsShadowLeft": null,
       "fragsShadowRight": null,
+      // Offset of X value for rank badge column.
+      // Смещение координаты X для поля бейджа ранга.
+      "rankBadgeXOffsetLeft": 0,
+      "rankBadgeXOffsetRight": 0,
+      // Width of the rank badge column. Default is 24.
+      // Ширина поля бейджа ранга. По умолчанию: 24.
+      "rankBadgeWidth": 24,
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
@@ -342,10 +363,10 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "vehicle", "nick".
+      // Available names: "frags", "badge", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
-      // Допустимые названия: "frags", "vehicle", "nick".
-      "standardFields": [ "frags", "nick", "vehicle" ],
+      // Допустимые названия: "frags", "badge", "nick", "vehicle".
+      "standardFields": [ "frags", "badge", "nick", "vehicle" ],
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
@@ -378,6 +399,13 @@
       // Тень для поля фрагов (по умолчанию null = без тени, как в чистом клиенте).
       "fragsShadowLeft": null,
       "fragsShadowRight": null,
+      // Offset of X value for rank badge column.
+      // Смещение координаты X для поля бейджа ранга.
+      "rankBadgeXOffsetLeft": 0,
+      "rankBadgeXOffsetRight": 0,
+      // Width of the rank badge column. Default is 24.
+      // Ширина поля бейджа ранга. По умолчанию: 24.
+      "rankBadgeWidth": 24,
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
@@ -390,8 +418,8 @@
       "nickMaxWidth": 158,
       // Display format for player nickname (macros allowed, see macros.txt).
       // Формат отображения имени игрока (допускаются макроподстановки, см. macros.txt).
-      "nickFormatLeft": "<font face='mono' size='{{xvm-stat?13|0}}' color='{{c:r}}' alpha='{{alive?#FF|#80}}'>{{r|--}}</font> {{name%.15s~..}}<font alpha='#A0'>{{clan}}</font>",
-      "nickFormatRight": "<font alpha='#A0'>{{clan}}</font>{{name%.15s~..}} <font face='mono' size='{{xvm-stat?13|0}}' color='{{c:r}}' alpha='{{alive?#FF|#80}}'>{{r}}</font>",
+      "nickFormatLeft": "<font face='mono' size='{{xvm-stat?13|0}}' color='{{c:r}}' alpha='{{alive?#FF|#80}}'>{{r|--}}</font> {{name%.{{xvm-stat?{{r_size>2?10|13}}|15}}s~..}}<font alpha='#A0'>{{clan}}</font>",
+      "nickFormatRight": "<font alpha='#A0'>{{clan}}</font>{{name%.{{xvm-stat?{{r_size>2?10|13}}|15}}s~..}} <font face='mono' size='{{xvm-stat?13|0}}' color='{{c:r}}' alpha='{{alive?#FF|#80}}'>{{r}}</font>",
       // Shadow for player name field (default null = no shadow, as in vanillas client).
       // Тень для поля имени игрока (по умолчанию null = без тени, как в чистом клиенте).
       "nickShadowLeft": null,

@@ -46,16 +46,19 @@
       "xp":       { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       // Vehicle name.
       // Название танка.
-      "tankName": { "enabled": true, "dx": 0, "dy": 0.1, "alpha": 100, "scale": 1 },
+      "tankName": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1, "textFormat": {}, "shadow": {} },
       // Vehicle rent info text.
       // Инфо текст аренды танка.
-      "rentInfo": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+      "rentInfo": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1, "textFormat": {}, "shadow": {} },
       // Info text (Crew incomplete, Repairs required)
       // Инфо текст (Неполный экипаж, Требуется ремонт).
-      "info":     { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+      "info":     { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1, "textFormat": {}, "shadow": {} },
+      // Info image
+      // Инфо иконка
+      "infoImg":  { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       // Info text for "Buy vehicle" and "Buy slot" slots.
       // Инфо текст для слотов "Купить машину" и "Купить слот".
-      "infoBuy":  { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+      "infoBuy":  { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1, "textFormat": {}, "shadow": {} },
       // Clan lock timer
       // Таймер блокировки танка
       "clanLock": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100 },
@@ -70,13 +73,13 @@
       "favorite": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100 },
       // Stats field that appears on the mouse hover
       // Поле статистики, отображаемое при наведении мыши
-      "stats": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100 }
+      "stats": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "textFormat": {}, "shadow": {} }
     },
     // Extra cell fields (extended format supported, see extra-field.txt).
     // Дополнительные поля ячеек (поддерживается расширенный формат, см. extra-field.txt).
     "extraFields": [
-	  // Подложка слота
       // Slot background
+      // Подложка слота
       { "x": 1, "y": 1, "layer": "substrate", "width": 160, "height": 100, "bgColor": "0x0A0A0A" },
       // Процент побед.
       {"enabled": ${"carousel/carouselWin.xc":"enabled"}, "x": 22, "y": 14, "format": "<font face='$FieldFont' size='12' color='{{v.c_winrate}}'>{{v.winrate%d~%| }}</font>", "shadow": ${ "def.textFieldShadow" }},
