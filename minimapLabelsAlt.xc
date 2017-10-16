@@ -10,8 +10,8 @@
     // Набор форматов
     "formats": [
 	  ${ "minimapLabelsTemplates.xc":"def.HPSpotted" },
-      ${ "minimapLabelsTemplates.xc":"def.vehicleSpottedCompany" },
-      ${ "minimapLabelsTemplates.xc":"def.nickSpottedCompany" },
+      ${ "minimapLabelsTemplates.xc":"def.vehicleSpottedAlt" },
+      ${ "minimapLabelsTemplates.xc":"def.nickSpottedAlt" },
 	  ${ "minimapLabelsTemplates.xc":"def.HPLost" },
       ${ "minimapLabelsTemplates.xc":"def.xmqpEvent" },	  
       ${ "minimapLabelsTemplates.xc":"def.vtypeLost" },

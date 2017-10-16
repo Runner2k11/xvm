@@ -35,7 +35,7 @@
 	  { "enabled": ${"minimapAppearance.xc":"minimapAppearance"}, "distance": 564, "scale": 1, "thickness":  0.9, "alpha": 40, "color": "0xFFFFFF" },
       // Additional circles:
       // Дополнительные круги:
-      { "enabled": false, "distance": 50,          "scale": 1, "thickness": 0.75, "alpha": 60, "color": "0xFFFFFF" },
+      { "enabled": true, "distance": 50,          "scale": 1, "thickness": 0.75, "alpha": 60, "color": "0xFFFFFF" },
       { "enabled": false, "distance": "standing",  "scale": 1, "thickness":  1.0, "alpha": 60, "color": "0xFF0000" },
       { "enabled": false, "distance": "motion",    "scale": 1, "thickness":  1.0, "alpha": 60, "color": "0x0000FF" },
       { "enabled": false, "distance": "dynamic",   "scale": 1, "thickness":  1.0, "alpha": 60, "color": "0x3EB5F1" }

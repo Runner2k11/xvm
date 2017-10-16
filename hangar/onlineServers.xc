@@ -18,6 +18,10 @@
       // Transparency
       // Прозрачность от 0 до 100
       "alpha": 80,
+      // If set, draw image at background.
+      // Фоновое изображение, если задано.
+      // example: "bgImage": "cfg://My/img/my.png",
+      "bgImage": null,
       // Server to online text delimiter
       // Разделитель сервера от онлайна
       "delimiter": ": ",
@@ -30,9 +34,9 @@
       // Leading between lines.
       // Пространство между строками
       "leading": 0,
-      // true - place at top of other windows, false - at bottom.
-      // true - отображать поверх остальных окон, false - под.
-      "topmost": true,
+      // layer - "bottom", "normal" (default), "top".
+      // слой - "bottom", "normal" (по-умолчанию), "top".
+      "layer": "normal",
       // true - show title "Online"
       // true - показывать заголовок "Онлайн"
       "showTitle": true,

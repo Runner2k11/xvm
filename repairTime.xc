@@ -1,6 +1,6 @@
 ﻿{
 	"def": {
-		"defaultTimeItem": {
+		"repairTimeItem": {
 			"width": 47,
 			"height": 40,
 			"screenHAlign": "left",
@@ -21,7 +21,7 @@
 		},
 		"repairTimeEngine": {
 			"$ref": {
-				"path": "def.defaultTimeItem"
+				"path": "def.repairTimeItem"
 			},
 			"enabled": true,
 			"updateEvent": "PY(ON_ENGINE_UPDATE)",
@@ -31,7 +31,7 @@
 		},
 		"repairTimeGun": {
 			"$ref": {
-				"path": "def.defaultTimeItem"
+				"path": "def.repairTimeItem"
 			},
 			"enabled": true,
 			"updateEvent": "PY(ON_GUN_UPDATE)",
@@ -41,7 +41,7 @@
 		},
 		"repairTimeTurret": {
 			"$ref": {
-				"path": "def.defaultTimeItem"
+				"path": "def.repairTimeItem"
 			},
 			"enabled": true,
 			"updateEvent": "PY(ON_TURRET_UPDATE)",
@@ -51,7 +51,7 @@
 		},
 		"repairTimeTracks": {
 			"$ref": {
-				"path": "def.defaultTimeItem"
+				"path": "def.repairTimeItem"
 			},
 			"enabled": true,
 			"updateEvent": "PY(ON_TRACKS_UPDATE)",
@@ -61,7 +61,7 @@
 		},
 		"repairTimeSurveying": {
 			"$ref": {
-				"path": "def.defaultTimeItem"
+				"path": "def.repairTimeItem"
 			},
 			"enabled": true,
 			"updateEvent": "PY(ON_SURVEYING_UPDATE)",
