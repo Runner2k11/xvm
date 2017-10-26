@@ -4,7 +4,7 @@
  */
 {
   "statistics": {
-    "enabled": false,
+    "enabled": true,
     "layer": "normal",
     "type": "extrafield",
     "formats": [
