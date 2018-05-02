@@ -8,8 +8,15 @@
     // Шаблон иконки клана.
     "clanIcon": {
       "enabled": true,
-      "x": 65, "y": 6, "width": 16, "height": 16, "align": "center", "alpha": 90, "bindToIcon": true,
+      "x": 65, "y": 6, "width": 16, "height": 16, "align": "center", "alpha": "{{alive?90|50}}", "bindToIcon": true,
       "src": "{{clanicon}}"
+    },
+    // Rank badge definition.
+    // Шаблон иконки бэйджа.
+    "rankBadgeIcon": {
+      "enabled": true,
+      "x": -377, "y": -1, "width": 30, "height": 30, "alpha": "{{alive?100|50}}", "bindToIcon": true,
+      "format": "<img src='img://gui/maps/icons/library/badges/24x24/badge_{{rankBadgeId}}.png' width='24' height='24'>"
     }
   },
   "statisticForm": {
@@ -18,7 +25,7 @@
     "removeSquadIcon": false,
     // true - disable rank badge icons
     // true - убрать отображение иконки бейджа ранга
-    "removeRankBadgeIcon": false,
+    "removeRankBadgeIcon": true,
     // Opacity percentage of vehicle icon. 0 - transparent ... 100 - opaque.
     // Прозрачность в процентах иконки танка. 0 - прозрачные, 100 - не прозрачные.
     "vehicleIconAlpha": 100,
@@ -42,64 +49,64 @@
     "fragsFieldShowBorder": false,
     // X offset for allies squad icons
     // Cмещение по оси X значка взвода союзников
-    "squadIconOffsetXLeft": 0,
+    "squadIconOffsetXLeft": 15,
     // X offset for enemies squad icons
     // Cмещение по оси X значка взвода противников
-    "squadIconOffsetXRight": 0,
+    "squadIconOffsetXRight": 15,
     // X offset for allies player names field
     // Cмещение по оси X поля ника союзников
-    "nameFieldOffsetXLeft": -11,
+    "nameFieldOffsetXLeft": "{{xvm-stat?0|-33}}",
     // X offset for enemies player names field
     // Cмещение по оси X поля ника противников
-    "nameFieldOffsetXRight": -10,
+    "nameFieldOffsetXRight": "{{xvm-stat?1|-30}}",
     // Width of allies player names field
     // Ширина поля ника союзников
-    "nameFieldWidthLeft": 200,
+    "nameFieldWidthLeft": 250,
     // Width of enemies names field
     // Ширина поля ника противников
-    "nameFieldWidthRight": 200,
+    "nameFieldWidthRight": 250,
     // X offset for "formatLeftVehicle" field
     // Cмещение по оси X поля названия танка союзников
-    "vehicleFieldOffsetXLeft": 24,
+    "vehicleFieldOffsetXLeft": 55,
     // X offset for "formatRightVehicle" field
     // Cмещение по оси X поля названия танка противников
-    "vehicleFieldOffsetXRight": 5,
+    "vehicleFieldOffsetXRight": 36,
     // Width of "formatLeftVehicle" field
     // Ширина поля названия танка союзников
-    "vehicleFieldWidthLeft": 250,
+    "vehicleFieldWidthLeft": 160,
     // Width of "formatRightVehicle" field
     // Ширина поля названия танка противников
-    "vehicleFieldWidthRight": 250,
+    "vehicleFieldWidthRight": 160,
     // X offset for allies vehicle icons
     // Смещение по оси X иконки танка союзников
-    "vehicleIconOffsetXLeft": 4,
+    "vehicleIconOffsetXLeft": 31,
     // X offset for enemies vehicle icons
     // Смещение по оси X иконки танка противников
-    "vehicleIconOffsetXRight": 0,
+    "vehicleIconOffsetXRight": 27,
     // X offset for allies frags
     // Смещение по оси X фрагов союзников
-    "fragsFieldOffsetXLeft": 5,
+    "fragsFieldOffsetXLeft": 20,
     // X offset for enemies frags
     // Смещение по оси X фрагов противников
-    "fragsFieldOffsetXRight": 0,
+    "fragsFieldOffsetXRight": 15,
     // Width of frags field for allies
     // Ширина поля фрагов союзников
-    "fragsFieldWidthLeft": 43,
+    "fragsFieldWidthLeft": 30,
     // Width of frags field for enemies
     // Ширина поля фрагов противников
-    "fragsFieldWidthRight": 43,
+    "fragsFieldWidthRight": 30,
     // Display format for the left panel (macros allowed, see macros.txt).
     // Формат отображения для левой панели (допускаются макроподстановки, см. macros.txt).
-    "formatLeftNick": "<img src='xvm://res/icons/flags/{{flag|default}}.png' width='16' height='13'> <img src='xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png'> {{name%.15s~..}} <font alpha='#A0'>{{clan}}</font>",
+    "formatLeftNick": "<img src='xvm://res/icons/flags/{{flag|default}}.png' width='16' height='13' vspace='-1'> <img src='xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png'> {{name%.{{xvm-stat?{{clan?9|15}}|{{clan?21|24}}}}s~..}} <font color='{{topclan?#997A3D|#838B8B}}'>{{clan}}</font>",
     // Display format for the right panel (macros allowed, see macros.txt).
     // Формат отображения для правой панели (допускаются макроподстановки, см. macros.txt).
-    "formatRightNick": "<font alpha='#A0'>{{clan}}</font> {{name%.15s~..}} <img src='xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png'> <img src='xvm://res/icons/flags/{{flag|default}}.png' width='16' height='13'>",
+    "formatRightNick": "<font color='{{topclan?#997A3D|#838B8B}}'>{{clan}}</font> {{name%.{{xvm-stat?{{clan?9|15}}|{{clan?21|24}}}}s~..}} <img src='xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png'> <img src='xvm://res/icons/flags/{{flag|default}}.png' width='16' height='13' vspace='-1'>",
     // Display format for the left panel (macros allowed, see macros.txt).
     // Формат отображения для левой панели (допускаются макроподстановки, см. macros.txt).
-    "formatLeftVehicle": "{{vehicle}}<font face='mono' size='{{xvm-stat?13|0}}'> <font color='{{c:kb}}'>{{kb%2d~k|--k}}</font> <font color='{{c:xr}}'>{{r%4d|--}}</font> <font color='{{c:winrate}}'>{{winrate%2d~%|--%}}</font></font>",
+    "formatLeftVehicle": "{{vehicle}}<font face='mono' size='{{xvm-stat?13|0}}' alpha='{{alive?#FF|#99}}'> <font color='{{c:kb}}'>{{kb%2d|--}}k</font> <font color='{{c:xr}}'>{{r%4d|--}}</font> <font color='{{c:winrate}}'>{{winrate%2d|--}}%</font></font>",
     // Display format for the right panel (macros allowed, see macros.txt).
     // Формат отображения для правой панели (допускаются макроподстановки, см. macros.txt).
-    "formatRightVehicle": "<font face='mono' size='{{xvm-stat?13|0}}'><font color='{{c:winrate}}'>{{winrate%2d~%|--%}}</font> <font color='{{c:xr}}'>{{r%4d|--}}</font> <font color='{{c:kb}}'>{{kb%2d~k|--k}}</font> </font>{{vehicle}}",
+    "formatRightVehicle": "<font face='mono' size='{{xvm-stat?13|0}}' alpha='{{alive?#FF|#99}}'><font color='{{c:winrate}}'>{{winrate%2d|--}}%</font> <font color='{{c:xr}}'>{{r%4d|--}}</font> <font color='{{c:kb}}'>{{kb%2d|--}}k</font> </font>{{vehicle}}",
     // Display format for the left panel (macros allowed, see macros.txt).
     // Формат отображения для левой панели (допускаются макроподстановки, см. macros.txt).
     "formatLeftFrags": "{{frags}}",
@@ -111,12 +118,14 @@
     // Set of formats for left panel (extended format supported, see extra-field.txt)
     // Набор форматов для левой панели (поддерживается расширенный формат, см. extra-field.txt)
     "extraFieldsLeft": [
-      ${"templates.clanIcon"}
+      ${"templates.clanIcon"},
+      ${"templates.rankBadgeIcon"}
     ],
     // Set of formats for right panel (extended format supported, see extra-field.txt)
     // Набор форматов для правой панели (поддерживается расширенный формат, см. extra-field.txt)
     "extraFieldsRight": [
-      ${"templates.clanIcon"}
+      ${"templates.clanIcon"},
+      ${"templates.rankBadgeIcon"}
     ]
   }
 }
