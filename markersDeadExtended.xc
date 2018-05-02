@@ -217,7 +217,7 @@
     },
     // Stun marker
     // Маркер оглушения
-    "stunMarker": {
+    "vehicleStatusMarker": {
       "enabled": true,   // false - disable        / не отображать.
       "x": 0,            // Position on the X axis / Положение по оси X.
       "y": -67,          // Position on the Y axis / Положение по оси Y.
@@ -307,7 +307,7 @@
     },
     // Stun marker
     // Маркер оглушения
-    "stunMarker": {
+    "vehicleStatusMarker": {
       "enabled": true,
       "x": 0,
       "y": -67,
