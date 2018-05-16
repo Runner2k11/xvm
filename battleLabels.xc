@@ -13,7 +13,7 @@
 	  ${ "repairTime.xc":"def.repairTimeGun" },
 	  ${ "repairTime.xc":"def.repairTimeTurret" },
 	  ${ "repairTime.xc":"def.repairTimeTracks" }, 
-	  ${ "repairTime.xc":"def.repairTimeSurveying"}
+	  ${ "repairTime.xc":"def.repairTimeSurveying" }
     ]
   }
 }
