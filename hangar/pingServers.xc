@@ -4,7 +4,7 @@
     "pingServers": {
       // true - enable display of ping to the servers
       // true - показывать пинг до серверов
-      "enabled": true,
+      "enabled": false,
       // Update interval, in ms
       // Интервал обновления, в мс
       "updateInterval": 15000,
