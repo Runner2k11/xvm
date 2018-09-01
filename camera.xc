@@ -1,21 +1,16 @@
 ﻿/**
  * Camera settings
  * Настройки камеры
+ * ПРИ ВКЛЮЧЕНИИ ВОЗМОЖЕН КОФЛИКТ С PMOD
  */
 {
   "camera": {
-    // Global camera settings switch
-    // Глобальный переключатель настроек камеры
-	// ПРИ ВКЛЮЧЕНИИ ВОЗМОЖЕН КОФЛИКТ С PMOD
     // false - disable camera settings.
     // false - отключить настройки камеры.
     "enabled": false,
     // true - disable red flash when enemy hit your tank.
     // true - отключить красную вспышку когда враг попадает по вам.
     "noFlashBang": false,
-    // true - hide the tips about switching to siege mode and aiming mode changing in strategic mode.
-    // true - скрыть подсказки перехода в осадный режим и смены режима прицеливания в стратегическом режиме.
-    "hideHint": false,
     // Arcade mode
     // Аркадный режим
     "arcade": {
@@ -124,7 +119,7 @@
       },
       // false - disable the shot recoil effect (for the enabled dynamic camera option)
       // false - выключить эффект отдачи от выстрела (для включенной опции динамической камеры)
-      "shotRecoilEffect": false,
+      "shotRecoilEffect": true,
       // true - disable dimming and greening in sniper scope
       // true - отключить затемнение и озеленение в снайперском прицеле
       "noBinoculars": false,
