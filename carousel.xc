@@ -4,8 +4,8 @@
  */
 {
   "carousel": {
-    // false - Disable customizable carousel.
-    // false - Отключить настраиваемую карусель.
+    // false - disable customizable carousel.
+    // false - отключить настраиваемую карусель.
     "enabled": ${"carousel/enabled.xc":"enabled"},
     // Type of cells - "default" (depends from window size), "normal" or "small"
     // Вид ячеек - "default" (в зависимости от размера окна), "normal" (обычные), "small" (маленькие)
@@ -31,6 +31,9 @@
     // true - hide cell "Buy slot".
     // true - скрыть ячейку "Купить слот".
     "hideBuySlot": false,
+    // true - hide cell "Restore Tank".
+    // true - скрыть ячейку "Восстановить машину".
+    "hideRestoreTank": false,
     // true - show total slots count in the "Buy vehicle" cell.
     // true - показывать общее количество слотов в ячейке "Купить машину".
     "showTotalSlots": false,
