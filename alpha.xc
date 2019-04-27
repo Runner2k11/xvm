@@ -9,20 +9,20 @@
     // Dynamic transparency by various statistical parameters.
     // Динамическая прозрачность по различным статистическим показателям.
     "alphaRating": {
-      "very_bad":      "100",  // very bad   / очень плохо
-      "bad":           "70",   // bad        / плохо
-      "normal":        "40",   // normal     / средне
-      "good":          "10",   // good       / хорошо
-      "very_good":     "0",    // very good  / очень хорошо
-      "unique":        "0"     // unique     / уникально
+      "very_bad":      "100",  // very bad  / очень плохо
+      "bad":           "70",   // bad       / плохо
+      "normal":        "40",   // normal    / средне
+      "good":          "10",   // good      / хорошо
+      "very_good":     "0",    // very good / очень хорошо
+      "unique":        "0"     // unique    / уникально
     },
     // Dynamic transparency by remaining health points.
     // Динамическая прозрачность по оставшемуся запасу прочности.
     "alphaHP": {
-      "very_low":      "100",  // very low       / очень низкий
-      "low":           "100",   // low            / низкий
-      "average":       "0",   // average        / средний
-      "above_average": "0"     // above-average  / выше среднего
+      "very_low":      "100",  // very low      / очень низкий
+      "low":           "75",   // low           / низкий
+      "average":       "50",   // average       / средний
+      "above_average": "0"     // above-average / выше среднего
     }
   },
   "alpha": {
@@ -46,7 +46,6 @@
       { "value": 1000, "alpha": ${"def.alphaHP.average"      } }, // alpha for HP <= 1000
       { "value": 9999, "alpha": ${"def.alphaHP.above_average"} }  // alpha for HP > 1000
     ],
-
     // Dynamic transparency by percentage of remaining health.
     // Динамическая прозрачность по проценту оставшегося здоровья.
     "hp_ratio": [
@@ -80,7 +79,7 @@
     //  { "value": 2000,  "alpha": ${"def.colorRating.normal"   } }, // 1001 - 2000  - normal
     //  { "value": 3000,  "alpha": ${"def.colorRating.good"     } }, // 2001 - 3000  - good
     //  { "value": 5000,  "alpha": ${"def.colorRating.very_good"} }, // 3001 - 5000  - very good
-    //  { "value": 99999, "alpha": ${"def.colorRating.unique"   } }  // 5001 - 99999 - uniquе
+    //  { "value": 99999, "alpha": ${"def.colorRating.unique"   } }  // 5001 - 99999 - unique
     // ],
     // Dynamic transparency by win percent
     // Динамическая прозрачность по проценту побед
@@ -89,7 +88,7 @@
       { "value": 48.49, "alpha": ${"def.alphaRating.bad"      } },
       { "value": 52.49, "alpha": ${"def.alphaRating.normal"   } },
       { "value": 57.49, "alpha": ${"def.alphaRating.good"     } },
-      { "value": 64.49, "alpha": ${"def.alphaRating.very_good"} },
+      { "value": 63.49, "alpha": ${"def.alphaRating.very_good"} },
       { "value": 100,   "alpha": ${"def.alphaRating.unique"   } }
     ],
     // Dynamic transparency by kilo-battles
