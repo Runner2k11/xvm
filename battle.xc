@@ -32,28 +32,31 @@
       // true - hide the tips aiming mode changing in strategic mode.
       // true - скрыть подсказку смены режима прицеливания в стратегическом режиме.
       "hideTrajectoryView": true,
-      // true - hide the tips about switching to siege mode.
-      // true - скрыть подсказку перехода в осадный режим.
+      // true - hide the tips about switching to siege mode and changing the driving mode (for wheeled vehicles).
+      // true - скрыть подсказку перехода в осадный режим и смены режима движения (для колесной техники).
       "hideSiegeIndicator": true,
       // true - hide the tips about switching to menu Personal Missions.
       // true - скрыть подсказку перехода в меню ЛБЗ.
-      "hideQuestProgress": false
+      "hideQuestProgress": true,
+      // true - hide the tips of the transition to the window of exploring the features of the machine (for wheeled vehicles).
+      // true - скрыть подсказку перехода к окну знакомства с особенностями машины (для колесной техники).
+      "hideHelpScreen": true
     },
-    // GUI elements settings (experts only)
-    // Настройки графических элементов (только для экспертов!)
+    // GUI elements settings (experts only).
+    // Настройки графических элементов (только для экспертов!).
     "elements": ${"elements.xc":"elements"},
     // Camera settings
     // Настройки камеры
     "camera": ${"camera.xc":"camera"},
-    // Switching between players on the minimap after death
-    // Переключение между игроками по миникарте после смерти
+    // Switching between players on the minimap after death.
+    // Переключение между игроками по миникарте после смерти.
     "minimapDeadSwitch": true
   },
   // Frag counter panel at top side of battle windows interface.
   // Панель счёта в бою.
   "fragCorrelation": {
-    // true - show quantity of alive instead of dead
-    // true - показывать количество живых танков вместо убитых
+    // true - show quantity of alive instead of dead.
+    // true - показывать количество живых танков вместо убитых.
     "showAliveNotFrags": false
   },
   // Ingame crits panel by "expert" skill.

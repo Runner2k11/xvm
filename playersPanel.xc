@@ -51,23 +51,23 @@
     "none": {
       // false - disable (отключить)
       "enabled": true,
-      // Width of area for switching to "large" mode on mouse over
-      // Ширина области переключения в режим "large" при наведении мыши
+      // Width of area for switching to "large" mode on mouse over.
+      // Ширина области переключения в режим "large" при наведении мыши.
       "expandAreaWidth": 230,
-      // Layout ("vertical" or "horizontal")
-      // Размещение ("vertical" - вертикально, или "horizontal" - горизонтально)
+      // Layout ("vertical" or "horizontal").
+      // Размещение ("vertical" - вертикально, или "horizontal" - горизонтально).
       "layout": "vertical",
-      // true - don't change players positions on dead (default false)
-      // true - не изменять позиции игроков при уничтожении (по умолчанию false)
+      // true - don't change players positions on dead (default false).
+      // true - не изменять позиции игроков при уничтожении (по умолчанию false).
       "fixedPosition": false,
-      // Opacity of dynamic squad invite indicator
-      // Прозрачность индикатора приглашения в динамический взвод
+      // Opacity of dynamic squad invite indicator.
+      // Прозрачность индикатора приглашения в динамический взвод.
       "inviteIndicatorAlpha": 100,
-      // X position offset of dynamic squad invite indicator
-      // Позиция X индикатора приглашения в динамический взвод
+      // X position offset of dynamic squad invite indicator.
+      // Позиция X индикатора приглашения в динамический взвод.
       "inviteIndicatorX": 0,
-      // Y position offset of dynamic squad invite indicator
-      // Позиция Y индикатора приглашения в динамический взвод
+      // Y position offset of dynamic squad invite indicator.
+      // Позиция Y индикатора приглашения в динамический взвод.
       "inviteIndicatorY": 0,
       // Extra fields.
       // Дополнительные поля.

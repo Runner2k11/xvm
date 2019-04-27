@@ -1,21 +1,21 @@
 ﻿/**
- * Normal carousel cells settings
- * Настройки ячеек карусели обычного размера
+ * Normal carousel cells settings.
+ * Настройки ячеек карусели обычного размера.
  */
 {
-  // Definitions
-  // Шаблоны
+  // Definitions.
+  // Шаблоны.
   "def": {
     // Text fields shadow.
     // Тень текстовых полей.
     "textFieldShadow": { "enabled": true, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 3, "distance": 0, "angle": 0 }
   },
   "normal": {
-    // Cell width
-    // Ширина ячейки
+    // Cell width.
+    // Ширина ячейки.
     "width": 160,
-    // Cell height
-    // Высота ячейки
+    // Cell height.
+    // Высота ячейки.
     "height": 100,
     // Spacing between carousel cells.
     // Отступ между ячейками карусели.
@@ -39,7 +39,7 @@
       // Иконка типа техники.
       "tankType": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       // Vehicle level.
-      // Уровень техники
+      // Уровень техники.
       "level":    { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       // Double XP icon
       // Иконка не сбитого опыта за первую победу в день.
