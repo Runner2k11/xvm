@@ -49,13 +49,13 @@
   "hitLog": {
     // false - disable.
     // false - отключить.
-    "enabled": false,
+    "enabled": true,
     // true - show damage by oneself.
     // true - отображать урон по себе.
-    "showSelfDamage": false,
+    "showSelfDamage": true,
     // true - show damage by allies.
     // true - отображать урон по союзникам.
-    "showAllyDamage": false,
+    "showAllyDamage": true,
     // Log of applied damage.
     // Лог нанесенного урона.
     "log": {
@@ -199,7 +199,7 @@
       },
       // List of hits format (macros allowed, see macros.txt).
       // Формат лога попаданий (допускаются макроподстановки, см. macros.txt)
-      "formatHistory": "<textformat leading='-4' tabstops='[20,50,90,190]'><font size='12'>\u00D7{{n-player}}:</font><tab><font color='{{c:dmg-kind}}'>{{dmg}}</font><tab>| {{dmg-player}}<tab>|<font color='{{c:vtype}}'>{{vehicle}}</font> <font face='xvm' size='15' color='#FF0000'>{{alive? |{{blownup?&#x7C;|<font size='19'>&#x77;</font>}}}}</font><tab>|{{name%.15s~..}} <font alpha='#A0'>{{clan}}</font></textformat>"
+      "formatHistory": "<textformat leading='-4' tabstops='[20,50,90,190]'><font size='12'>\u00D7{{n-player}}:</font><tab><font color='{{c:dmg-kind}}'>{{dmg}}</font><tab>| {{dmg-player}}<tab>|<font color='{{c:vtype}}'>{{vehicle}}</font> <font face='xvm' size='15' color='#FF0000'>{{alive? |{{blownup?&#x7C;|<font size='19'>&#x77;</font>}}}}</font></textformat>"
     },
     // Log of applied damage (alternative mode).
     // Лог нанесенного урона (альтернативный режим).
