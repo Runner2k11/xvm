@@ -4,6 +4,7 @@
  */
 {
   "battleResults": {
+    "sortColumn": 4,
     // Initial page (1, 2, 3).
     // Номер начальной страницы (1, 2, 3).
     "startPage": 1,
@@ -22,9 +23,26 @@
     // true - show totals for your battle efficiency in first page.
     // true - показывать итог по вашей боевой эффективности на первой странице.
     "showTotals": true,
-    // true - Enable display of battle tier.
-    // true - включить отображение уровня боя.
-    "showBattleTier": false,
-    "sortColumn": 4
+    // true - display standard interface for the "FrontLine" mode.
+    // true - отображать стандартный интерфейс для режима "Линия фронта".
+    "showStandardFrontLineInterface": true,
+    // Customize "Manageable bonus to experience" panel.
+    // Настройка панели "Управляемый бонус к опыту".
+    "bonusState": {
+      // false - disable.
+      // false - отключить.
+      "enabled": true,
+      // Offset panel of X axis.
+      // Смещение панели по оси X.
+      "offsetX": 25,
+      // Offset panel of Y axis.
+      // Смещение панели по оси Y.
+      "offsetY": 60,
+      // Panel background transparency, in percents.
+      // 0 - transparent, 100 - opaque.
+      // Прозрачность подложки панели, в процентах.
+      // 0 - прозрачная, 100 - не прозрачная.
+      "backgroundAlpha": 70
+    }
   }
 }
