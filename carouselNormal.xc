@@ -83,15 +83,12 @@
       { "x": 1, "y": 1, "layer": "substrate", "width": 160, "height": 100, "bgColor": "0x0A0A0A" },
       // Процент побед.
       {"enabled": ${"carousel/carouselWin.xc":"enabled"}, "x": 22, "y": 14, "format": "<font face='$FieldFont' size='12' color='{{v.c_winrate}}'>{{v.winrate%d~%| }}</font>", "shadow": ${ "def.textFieldShadow" }},
-      // Средний урон.
-      {"enabled": ${"carousel/carouselDmg.xc":"enabled"}, "x": 2,  "y": 78, "alpha": "{{v.tdb?|0}}", "format": "<img src='img://gui/maps/icons/tankmen/skills/big/gunner_sniper.png' width='17' height='17'>"},
-      {"enabled": ${"carousel/carouselDmg.xc":"enabled"}, "x": 22, "y": 79, "format": "<font face='$FieldFont' size='12' color='{{v.c_wn8effd}}'>{{v.tdb%4d}}</font>", "shadow": ${ "def.textFieldShadow" }},
+      // Средний урон на танке.
+      {"enabled": ${"carousel/carouselDmg.xc":"enabled"}, "x": 2,  "y": 60, "alpha": "{{v.tdb?|0}}", "format": "<img src='img://gui/maps/icons/tankmen/skills/big/gunner_sniper.png' width='17' height='17'>"},
+      {"enabled": ${"carousel/carouselDmg.xc":"enabled"}, "x": 22, "y": 62, "format": "<font face='$FieldFont' size='12' color='{{v.c_wn8effd}}'>{{v.tdb%4d}}</font>", "shadow": ${ "def.textFieldShadow" }},
       // Эффективность на танке.
-      {"enabled": ${"carousel/carouselxTE.xc":"enabled"}, "x": 2,  "y": 60, "alpha": "{{v.xte?|0}}", "format": "<img src='img://gui/maps/icons/tankmen/skills/big/brotherhood.png' width='17' height='17'>"},
-      {"enabled": ${"carousel/carouselxTE.xc":"enabled"}, "x": 22, "y": 62, "format": "<font face='$FieldFont' size='12' color='{{v.c_xte}}'>{{v.xte%2d}}</font>", "shadow": ${ "def.textFieldShadow" }},
-      // Уровень боев.
-      {"enabled": ${"carousel/carouselTier.xc":"enabled"}, "x": 115,  "y": 64, "format": "<img src='img://gui/maps/icons/library/BattleResultIcon-1.png' width='14' height='14'>"},
-      {"enabled": ${"carousel/carouselTier.xc":"enabled"}, "x": 130,  "y": 62, "format": "<font face='$FieldFont' size='12' color='#CCCCCC'>{{v.battletiermin}}-{{v.battletiermax}}</font>", "shadow": ${ "def.textFieldShadow" }},
+      {"enabled": ${"carousel/carouselxTE.xc":"enabled"}, "x": 102,  "y": 60, "alpha": "{{v.xte?|0}}", "format": "<img src='img://gui/maps/icons/tankmen/skills/big/brotherhood.png' width='17' height='17'>"},
+      {"enabled": ${"carousel/carouselxTE.xc":"enabled"}, "x": 118,  "y": 62, "format": "<font face='$FieldFont' size='12' color='{{v.c_xte}}'>{{v.xte%2d}}</font>|<font face='$FieldFont' size='12' color='#D042F3'>100</font>", "shadow": ${ "def.textFieldShadow" }},
 	  // Отметки на стволе.
       {"enabled": ${"carousel/carouselDmgR.xc":"enabled"}, "x": 105,  "y": 12, "alpha": "{{v.damageRating?|0}}", "format": "<img src='img://gui/maps/icons/library/complete.png' width='20' height='20'>"},
       {"enabled": ${"carousel/carouselDmgR.xc":"enabled"}, "x": 124,  "y": 14, "format": "<font face='$FieldFont' size='12' color='{{v.c_damageRating}}'>{{v.damageRating%2.01f~%}}</font>", "shadow": ${ "def.textFieldShadow"}},

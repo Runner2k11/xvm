@@ -56,17 +56,17 @@
     // Адрес, где выкладываются обновления конфига.
     "url": "https://modxvm.com/",
 
-    // Config last modified.
-    // Дата последней модификации конфига.
-    "date": "23.05.2019",
-
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "1.5.0.4",
+    "gameVersion": "1.5.1.1",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "7.9.2"
+    "modMinVersion": "7.9.5",
+
+    // Config last modified.
+    // Дата последней модификации конфига.
+    "date": "11.06.2019"
   },
 
   // Parameters for login screen.
