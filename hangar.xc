@@ -50,13 +50,13 @@
     },
     // true - enable locker for gold.
     // true - включить замок для золота.
-    "enableGoldLocker": false,
+    "enableGoldLocker": ${"hangar/GoldLocker.xc":"enableGoldLocker"},
     // true - enable locker for free XP.
     // true - включить замок для свободного опыта.
-    "enableFreeXpLocker": false,
+    "enableFreeXpLocker": ${"hangar/FreeXpLocker.xc":"enableFreeXpLocker"},
     // true - enable locker for bonds.
     // true - включить замок для бонов.
-    "enableCrystalLocker": false,
+    "enableCrystalLocker": ${"hangar/CrystalLocker.xc":"enableCrystalLocker"},
     // Show/hide server info or change its parameters.
     // Показать/спрятать информацию о сервере, или изменить ее параметры.
     "serverInfo": {
